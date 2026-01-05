@@ -1,0 +1,16 @@
+{
+    "replacementImages": [
+        {
+            "replacement": "glow01",
+            "base": "photo"
+        },
+        {
+            "replacement": "glow02",
+            "base": "glow02"
+        },
+        {
+            "replacement": "",
+            "base": "hint_small_horz"
+        }
+    ]
+}

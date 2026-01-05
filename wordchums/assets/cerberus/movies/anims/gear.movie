@@ -1,0 +1,31 @@
+{
+	"width": 200,
+	"height": 200,
+	"frames": 2,
+	"rate": 1,
+	"images": 
+	[
+		{ "width": 1, "height": 1 },
+		{ "width": 1, "height": 1 },
+		{ "width": 1, "height": 1 }
+	],
+	"shapes": 
+	[
+		{ "debug": 0, "type": "image", "image": 0, "width": 1, "height": 1, "offsetX": 0, "offsetY": 0 },
+		{ "debug": 0, "type": "image", "image": 1, "width": 1, "height": 1, "offsetX": 0, "offsetY": 0 },
+		{ "debug": 0, "type": "image", "image": 2, "width": 1, "height": 1, "offsetX": 0, "offsetY": 0 }
+	],
+	"movie": 
+	[
+		[
+			{ "t": 0, "l": 0, "s": 0, "x": 0.0, "y": 0.0, "sx": 1.0, "sy": 1.0, "a": 0.0, "p": 0.0 },
+			{ "t": 0, "l": 1, "s": 1, "x": 0.0, "y": 0.0, "sx": 1.0, "sy": 1.0, "a": 0.0, "p": 0.0 },
+			{ "t": 0, "l": 2, "s": 2, "x": 0.0, "y": 0.0, "sx": 1.0, "sy": 1.0, "a": 0.0, "p": 0.0 }
+		],
+		[
+			{ "t": 1, "l": 0, "x": 0.0, "y": 0.0, "sx": 1.0, "sy": 1.0, "a": 0.0, "p": 0.0 },
+			{ "t": 1, "l": 1, "x": 0.0, "y": 0.0, "sx": 1.0, "sy": 1.0, "a": 0.0, "p": 0.0 },
+			{ "t": 1, "l": 2, "x": 0.0, "y": 0.0, "sx": 1.0, "sy": 1.0, "a": 0.0, "p": 0.0 }
+		]
+	]
+}

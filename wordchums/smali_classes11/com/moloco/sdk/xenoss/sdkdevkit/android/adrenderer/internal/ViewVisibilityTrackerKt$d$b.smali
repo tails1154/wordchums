@@ -1,0 +1,124 @@
+.class public final Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/ViewVisibilityTrackerKt$d$b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/view/View$OnAttachStateChangeListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/ViewVisibilityTrackerKt$d;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:Lkotlinx/coroutines/channels/ProducerScope;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlinx/coroutines/channels/ProducerScope<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Lkotlinx/coroutines/channels/ProducerScope;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlinx/coroutines/channels/ProducerScope<",
+            "-",
+            "Ljava/lang/Boolean;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/ViewVisibilityTrackerKt$d$b;->a:Lkotlinx/coroutines/channels/ProducerScope;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public onViewAttachedToWindow(Landroid/view/View;)V
+    .locals 1
+    .param p1    # Landroid/view/View;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    .line 2
+    const-string v0, "p0"
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    iget-object p1, p0, Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/ViewVisibilityTrackerKt$d$b;->a:Lkotlinx/coroutines/channels/ProducerScope;
+
+    .line 8
+    .line 9
+    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-interface {p1, v0}, Lkotlinx/coroutines/channels/SendChannel;->trySend-JP2dKIU(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 13
+    return-void
+.end method
+
+.method public onViewDetachedFromWindow(Landroid/view/View;)V
+    .locals 1
+    .param p1    # Landroid/view/View;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    .line 2
+    const-string v0, "p0"
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    iget-object p1, p0, Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/ViewVisibilityTrackerKt$d$b;->a:Lkotlinx/coroutines/channels/ProducerScope;
+
+    .line 8
+    .line 9
+    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-interface {p1, v0}, Lkotlinx/coroutines/channels/SendChannel;->trySend-JP2dKIU(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 13
+    return-void
+.end method

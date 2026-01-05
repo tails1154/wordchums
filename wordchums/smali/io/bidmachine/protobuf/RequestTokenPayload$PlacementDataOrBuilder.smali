@@ -1,0 +1,43 @@
+.class public interface abstract Lio/bidmachine/protobuf/RequestTokenPayload$PlacementDataOrBuilder;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/explorestack/protobuf/MessageOrBuilder;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lio/bidmachine/protobuf/RequestTokenPayload;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "PlacementDataOrBuilder"
+.end annotation
+
+
+# virtual methods
+.method public abstract getOmidpn()Ljava/lang/String;
+.end method
+
+.method public abstract getOmidpnBytes()Lcom/explorestack/protobuf/ByteString;
+.end method
+
+.method public abstract getOmidpv()Ljava/lang/String;
+.end method
+
+.method public abstract getOmidpvBytes()Lcom/explorestack/protobuf/ByteString;
+.end method
+
+.method public abstract getSdk()Ljava/lang/String;
+.end method
+
+.method public abstract getSdkBytes()Lcom/explorestack/protobuf/ByteString;
+.end method
+
+.method public abstract getSdkver()Ljava/lang/String;
+.end method
+
+.method public abstract getSdkverBytes()Lcom/explorestack/protobuf/ByteString;
+.end method

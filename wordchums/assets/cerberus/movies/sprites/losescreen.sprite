@@ -1,0 +1,14 @@
+{
+   "screenSize": { "w": 640, "h": 960 },
+   "anims":
+   [
+      {
+         "type": "default",
+         "movie": "losescreen",
+         "scale": 1.00,
+         "anchor": { "x": 0, "y": -8 },
+         "loop": false,
+         "sound": "game_lost"
+      }
+   ]
+}

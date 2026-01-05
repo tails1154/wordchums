@@ -1,0 +1,31 @@
+.class Lcom/tails1154/wordchums/c_EnIntMap2;
+.super Lcom/tails1154/wordchums/c_EnMap10;
+.source "SourceFile"
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/tails1154/wordchums/c_EnMap10;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final m_EnIntMap_new()Lcom/tails1154/wordchums/c_EnIntMap2;
+    .locals 0
+
+    invoke-super {p0}, Lcom/tails1154/wordchums/c_EnMap10;->m_EnMap_new()Lcom/tails1154/wordchums/c_EnMap10;
+
+    return-object p0
+.end method
+
+.method public final p_Compare2(II)I
+    .locals 0
+
+    sub-int/2addr p1, p2
+
+    return p1
+.end method

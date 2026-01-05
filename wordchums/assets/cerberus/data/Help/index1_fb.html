@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=301">
+<style type="text/css">
+body,html {margin:0;padding:0;height:100%;}
+body,div,p,td {font-family:Helvetica, Arial, sans-serif;}
+div.clear {clear:both;}
+
+#tips {position:relative;width:602px;min-height:900px;background:#56a;padding:20px 0 80px;}
+#tips #menu {text-align:center;}
+#tips #menu button {width:380px;font-size:36px;text-align:center;margin:10px 0;padding:10px 10px;
+   background-color:#fff;
+   background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ccc));
+   background-image:-webkit-linear-gradient(top, #fff, #ccc);
+   background-image:   -moz-linear-gradient(top, #fff, #ccc);
+   background-image:    -ms-linear-gradient(top, #fff, #ccc);
+   background-image:     -o-linear-gradient(top, #fff, #ccc);
+	border:4px solid #888;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	border-radius:20px;
+	-webkit-box-shadow:2px 2px 4px #222;
+	-moz-box-shadow:2px 2px 4px #222;
+	box-shadow:2px 2px 4px #222;}
+
+#tips div.tipsection p.backtotop {margin:50px 0 30px;}
+#tips div.tipsection p.backtotop a {font-size:28px;text-align:center;margin-left:58px;padding:11px 114px;
+   background-color:#fff;
+   background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ccc));
+   background-image:-webkit-linear-gradient(top, #fff, #ccc);
+   background-image:   -moz-linear-gradient(top, #fff, #ccc);
+   background-image:    -ms-linear-gradient(top, #fff, #ccc);
+   background-image:     -o-linear-gradient(top, #fff, #ccc);
+	border:2px solid #222;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	border-radius:20px;
+	-webkit-box-shadow:2px 2px 4px #222;
+	-moz-box-shadow:2px 2px 4px #222;
+	box-shadow:2px 2px 4px #222;
+	text-decoration:none;
+	color:#000;
+}
+
+#tips div.tipsection {width:500px;margin:20px auto;padding:20px;
+   background-color:#fff;
+	border:4px solid #fff;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	border-radius:20px;
+	-webkit-box-shadow:2px 2px 4px #222;
+	-moz-box-shadow:2px 2px 4px #222;
+	box-shadow:2px 2px 4px #222;}
+
+#tips h1 {
+	font-size:48px;text-align:center;margin:6px auto 10px;padding:10px 10px;
+	background-color:#89f;color:#fff;
+	border:4px solid #89f;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	border-radius:20px;}
+#tips h2 {font-weight:bold;font-size:24px;text-align:left;padding:0;margin:40px 15px 10px;}
+#tips h3 {font-weight:bold;font-size:24px;text-align:left;padding:0;margin:10px 15px 10px;}
+#tips p {font-size:24px;margin:0 15px 0;}
+#tips div.ims {margin:0 15px 0;}
+#tips div.center {text-align:center;}
+#tips div.left,#tips img.left {float:left;}
+#tips div.right,#tips img.right {float:right;}
+
+#tips table {margin:20px auto;
+	background-color:#56a;
+	border:2px solid #459;
+	-webkit-box-shadow:2px 2px 4px #222;
+	-moz-box-shadow:2px 2px 4px #222;
+	box-shadow:2px 2px 4px #222;}
+#tips td,th {font-size:24px;padding:7px 10px;}
+#tips th {color:#fff;}
+#tips td {background-color:#fff;border-top:2px solid #bbb;border-left:2px solid #bbb;text-align:right;}
+#tips td:first-child {border-left:0;text-align:left;}
+#tips td.line {border-top:2px solid #444;}
+#tips th.left {text-align:left;}
+#tips th.right {text-align:right;}
+
+</style>
+<script type="text/javascript">
+function show(id) {
+ var div = document.getElementById(id);
+ if (div.style.display == "none") {
+  hideall();
+  div.style.display = "block";
+ }
+ window.scroll(0,getObjectY(document.getElementById('scrolltop')));
+}
+function hideall() {
+ var hints = 3;
+ for (var i = 1;i <= hints;i++) {
+  document.getElementById("tipsection"+i).style.display = "none";
+ }
+}
+function getObjectY(obj) {
+	var curtop = 0;
+	if (obj.offsetParent) {
+		do {
+			curtop += obj.offsetTop;
+		} while (obj = obj.offsetParent);
+	return [curtop];
+	}
+}
+</script>
+</head>
+<body>
+<a name="top"></a>
+ <div id="tips">
+  <div id="menu">
+   <button onclick="show('tipsection1')">Score Big</button>
+   <button onclick="show('tipsection2')">Level Faster</button>
+   <button onclick="show('tipsection3')">Play More</button>
+  </div>
+  <div><a id="scrolltop" name="scrolltop"></a></div>
+  <div class="tipsection" id="tipsection1">
+   <h1>Score Big</h1>
+   <h2>Play bigger words!</h2>
+   <p>Play 5 letters +10 points<br>
+   Play 6 letters +20 points<br>
+   Play 7 letters +40 points !!!</p>
+   <h2>Multiply your points!</h2>
+   <div class="ims center"><img src="ims/tips/image1.png" width="" alt=""><img src="ims/tips/image2.png" width="" alt=""><img src="ims/tips/image3.png" width="" alt=""><img src="ims/tips/image4.png" width="" alt=""><img src="ims/tips/image5.png" width="" alt=""></div>
+   <p>Long words are great, but multiplier squares deserve your real attention. Find a way to make a word across more than one and you're likely to see some really big points. Playing across two W2 squares multiplies your points times 4! Playing across a W3 and a W2 multiplies your points times 6!</p>
+   <h2>Resist playing a word that sets up your opponent to use the multipliers against you!</h2>
+   <p>Unless the word you're playing is giving you some REALLY big points. If there's another word that gives you pretty good points and does not set your opponent up to play on a W3 square next turn, go with that instead.</p>
+   <h2>Use hint <em>after</em> you find a good word</h2>
+   <div class="ims left"><img src="ims/tips/image6.png" width="" alt=""></div>
+   <p>How do you know you've found a good word? A green points badge shows that you're at least half way to the best word on the board. The Hint feature points to the location of a word that's at least half way between your highest word and that best word on the board.</p> 
+   <h2>Bomb low points!</h2>
+   <div class="ims left"><img src="ims/tips/image7.png" width="" alt=""></div>
+   <p>Use a bomb when the points are low and the badge is already green. The bomb gets you a new set of letter tiles and lets you keep your turn.</p>
+   <h2></h2>
+   <div class="ims"><img src="ims/rules/premiumstars4.png" width="" alt=""><img src="ims/rules/premiumstars5.png" height=“49” alt="" class="right"></div>
+   <h3>Premium Stars and Best Word</h3>
+   <p>The 4th star shows that your word is at least 75% of the best score and helps you zero in on that max score.  It will also signal Best Word when you find the best points. Premium stars may be purchased in the Shop under the Boosts tab.</strong></p>
+   <h2>2-letter power words</h2>
+   <div class="ims right"><img src="ims/tips/qi.png" width="" alt=""></div>
+   <p>Combining high-point letters (J,Q,X,Z) with just one vowel can score big points. Placing a big letter on a multiplier square that’s part of two words scores mega points.</p>
+   <h2>Hooking!</h2>
+   <p>You can often place letters such as S (or a blank, or E) at the end of an existing word..then make a whole new perpendicular word. Veteran players call this “hooking”. Many words can also be “hooked” with a new starting letter. Add an E in front of SPECIAL and you have ESPECIAL.</p>
+   <h2>Play adjacent words!</h2>
+   <p>Play adjacent to another word to earn points for every word that’s made. Letters that form a new word vertically and horizontally get counted twice! Imagine a Q (10 points) on a triple letter that’s part of words up and down…that’s 60 points for just the Q!</p>
+   <h2>Don’t get stuck with big points!</h2>
+   <p>If your opponent makes the last play of the game, all of your remaining letter points are SUBTRACTED from your score AND ADDED to theirs!</p>
+   <p class="backtotop"><a href="#top">Back to Top</a></p>
+  </div>
+  <div class="tipsection" id="tipsection2" style="display:none;">
+   <h1>Level Faster</h1>
+   <h2>What’s XP?</h2>
+   <p>You start out earning 1 XP (experience point) for every point in your word. The level bar at bottom of screen shows you how many points you need to get to the next level.</p>
+   <h2>Gear gets to the next level faster</h2>
+   <p>Hats and Hats and holds increase XP by the bonus listed on that item. For example…if you are wearing a hat with XP +15% and a hold with XP + 9% then you add those together and get 25% more experience for every word. Note: You get the XP bonus only for the gear you are wearing.</p>
+   <h2>Energy Boost</h2>
+   <p>Energy doubles your experience rate. It also doubles the gear. Combining gear and boost will soon have you more than tripling the XP you earn each turn!</p>
+   <table cellspacing="0">
+    <tr>
+     <th class="left">Item</th><th>Boost</th><th class="right">XP</th>
+    </tr>
+    <tr>
+     <td>40 Points for word</td><td>&nbsp;</td><td>40</td>
+    </tr>
+    <tr>
+     <td>Shopping Bag</td><td>+15%</td><td>6</td>
+    </tr>
+    <tr>
+     <td>Straw Hat</td><td>+50%</td><td>20</td>
+    </tr>
+    <tr>
+     <td>XP after gear bonus</td><td>&nbsp;</td><td class="line">66</td>
+    </tr>
+    <tr>
+     <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+    </tr>
+    <tr>
+     <td class="total">Total XP earned</td><td>&nbsp;</td><td class="total line">132</td>
+    </tr>
+   </table>
+   <p class="backtotop"><a href="#top">Back to Top</a></p>
+  </div>
+  <div class="tipsection" id="tipsection3" style="display:none;">
+   <h1>Play More</h1>
+   <h2>More ways to start games</h2>
+   <div class="ims left"><img src="ims/tips/image8.png" width="" alt=""></div>
+   <p>Quickly start a new game with anyone on your leaderboards by tapping the plus button to the right of their name. Start multiple types of games using the new game button on the main screen.</p>
+   <h2>Select 1 on 1, 3-4 Players or Teams to start different types of games.</h2>
+   <div class="ims"><img src="ims/tips/image9.png" width="470" alt=""></div>
+   <h2>Share and Like</h2>
+   <div class="ims"><img src="ims/tips/image11.png" height="55" alt=""></div>
+   <div class="clear"></div>
+   <p>Let your friends know you are playing by liking and sharing Word Chums using the Facebook buttons to the left of the game.</p>
+   <h2>Invite – Earn hundreds of coins</h2>
+   <div class="ims"><img src="ims/tips/image13.png" height="55" alt="" class="left"></div>
+   <div class="clear"></div>
+   <p>Personally invite friends to play using the Invite Friends button on the main page. You earn coins for achievements when your friends join the game.</p>
+   <p class="backtotop"><a href="#top">Back to Top</a></p>
+  </div>
+ </div>
+</body>
+</html>

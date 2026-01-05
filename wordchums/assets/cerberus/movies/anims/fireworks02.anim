@@ -1,0 +1,12 @@
+{
+    "baseImages": [
+        "photo1",
+        "darken",
+        "firework_red",
+        "fireworks_sign",
+        "fireworks_best",
+        "firework_green",
+        "firework_explosion"
+    ],
+    "accessories": []
+}

@@ -1,0 +1,13 @@
+{
+   "screenSize": { "w": 640, "h": 960 },
+   "anims":
+   [
+      {
+         "type": "default",
+         "movie": "chat_button01",
+         "scale": 1.0,
+         "anchor": { "x":278, "y":796 },
+         "loop": true
+      }
+   ]
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=301">
+<style type="text/css">
+body,html {margin:0;padding:0;height:100%;font-family:Helvetica, Arial, sans-serif;}
+div.speech {position:relative;
+	padding:30px;
+	width:400px;
+	height:auto;
+	margin:auto auto;
+	text-align:left;
+   background-color:#fff;
+   background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ccc));
+   background-image:-webkit-linear-gradient(top, #fff, #ccc);
+   background-image:   -moz-linear-gradient(top, #fff, #ccc);
+   background-image:    -ms-linear-gradient(top, #fff, #ccc);
+   background-image:     -o-linear-gradient(top, #fff, #ccc);
+	border:4px solid #888;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	border-radius:20px;
+	-webkit-box-shadow:2px 2px 4px #222;
+	-moz-box-shadow:2px 2px 4px #222;
+	box-shadow:2px 2px 4px #222;
+	z-index:200;
+}
+#helppanemessage {position:relative;width:602px;height:48px;background:#56a;padding:16px 0;}
+
+#helppane {position:relative;width:602px;height:655px;overflow:hidden;background:#56a;}
+#helppane div.gamescreen {width:602px;height:638px;margin:0;padding:0 1px;z-index:5;
+	-webkit-box-shadow:0px 4px 16px #222;
+	-moz-box-shadow:0px 4px 16px #222;
+	box-shadow:0px 4px 16px #222;}
+#helppane div.layer {position:absolute;top:0;left:0;width:602px;height:638px;display:table;}
+#helppane div.bubble {display:table-cell;vertical-align:middle;overflow:visible;font-family:Helvetica, Arial, sans-serif;font-weight:normal;font-size:28px;}
+#helppane div.lastword {top:27px;left:150px;width:250px;}
+#helppane div.recall {top:14px;left:480px;width:100px;}
+#helppane div.remaining {top:340px;left:166px;width:200px;}
+#helppane h3 {font-weight:bold;font-size:28px;text-align:center;padding:0;margin:0 0 5px 0;}
+#helppane div.hint {position:absolute;top:-56px;left:-56px;width:56px;height:56px;overflow:hidden;background:transparent;z-index:100;}
+
+#helppane div.hint1 {top:2px;left:3px;width:69px;height:63px;}
+#helppane div.hint2 {top: 3px;left: 88px;width: 98px;height: 70px;}
+#helppane div.hint3 {top: 3px;left: 193px;width: 98px;height: 70px;}
+#helppane div.hint4 {top: 3px;left: 299px;width: 98px;height: 70px;}
+#helppane div.hint5 {top: 3px;left: 530px;width: 68px;height: 62px;}
+#helppane div.hint6 {top: 248px;left: 266px;width: 65px;height: 64px;}
+#helppane div.hint7 {top: 212px;left: 426px;width: 101px;height: 103px;}
+#helppane div.hint8 {top: 337px;left: 523px;width: 77px;height: 84px}
+#helppane div.hint9 {top: 434px;left: 268px;width: 66px;height: 35px;}
+#helppane div.hint10 {top: 432px;left: 350px;width: 109px;height: 42px;}
+#helppane div.hint11 {top: 494px;left: 0px;width: 135px;height: 72px;}
+#helppane div.hint12 {top: 488px;left: 151px;width: 92px;height: 105px;}
+#helppane div.hint13 {top: 481px;left: 265px;width: 68px;height: 63px;}
+#helppane div.hint14 {top: 548px;left: 268px;width: 65px;height: 41px;}
+#helppane div.hint15 {top: 489px;left: 357px;width: 92px;height: 110px;}
+#helppane div.hint16 {top: 488px;left: 455px;width: 145px;height: 83px;}
+#helppane div.hint17 {top: 602px;left: 0px;width: 458px;height: 36px;}
+#helppane div.hint18 {top: 602px;left: 476px;width: 135px;height: 36px;}
+#helppane div.hint19 {top: 195px;left: 185px;width: 63px;height: 63px;}
+#helppane div.hint20 {top: 139px;left: 73px;width: 65px;height: 165px;}
+#helppane div.hint21 {top: 3px;left: 399px;width: 132px;height: 70px;}
+
+#helppane ul {margin-top:10px;margin-bottom:10px;}
+#helppane li {}
+
+#helppanemessage p.top {font-size:30px;text-align:center;margin:0 auto 0;padding:5px 10px;width:75%;
+	background-color:#89f;color:#fff;
+	border:4px solid #89f;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	border-radius:20px;}
+</style>
+<script type="text/javascript">
+function show(id) {
+ var div = document.getElementById(id);
+ if (div.style.display == "block") {
+  div.style.display = "none";
+ } else {
+  hideall();
+  div.style.display = "block";
+ }
+}
+function hideall() {
+ var hints = 21;
+ for (var i = 1;i <= hints;i++) {
+  document.getElementById("help"+i).style.display = "none";
+ }
+}
+</script>
+</head>
+<body>
+ <div id="helppanemessage">
+  <p class="top">Tap screen elements for help</p>
+ </div>
+ <div id="helppane">
+  <div class="gamescreen"><img src="ims/tutorial/GameScreenHelp.png" width="600" alt=""></div>
+  <div class="hint hint1" onclick="show('help1');"></div>
+  <div class="hint hint2" onclick="show('help2');"></div>
+  <div class="hint hint3" onclick="show('help3');"></div>
+  <div class="hint hint4" onclick="show('help4');"></div>
+  <div class="hint hint5" onclick="show('help5');"></div>
+  <div class="hint hint6" onclick="show('help6');"></div>
+  <div class="hint hint7" onclick="show('help7');"></div>
+  <div class="hint hint8" onclick="show('help8');"></div>
+  <div class="hint hint9" onclick="show('help9');"></div>
+  <div class="hint hint10" onclick="show('help10');"></div>
+  <div class="hint hint11" onclick="show('help11');"></div>
+  <div class="hint hint12" onclick="show('help12');"></div>
+  <div class="hint hint13" onclick="show('help13');"></div>
+  <div class="hint hint14" onclick="show('help14');"></div>
+  <div class="hint hint15" onclick="show('help15');"></div>
+  <div class="hint hint16" onclick="show('help16');"></div>
+  <div class="hint hint17" onclick="show('help17');"></div>
+  <div class="hint hint18" onclick="show('help18');"></div>
+  <div class="hint hint19" onclick="show('help19');"></div>
+  <div class="hint hint20" onclick="show('help20');"></div>
+  <div class="hint hint21" onclick="show('help21');"></div>
+  <div class="layer">
+  <div class="bubble">
+   <div class="speech" id="help1" style="display:none;" onclick="show('help1');"><h3>Back</h3>
+Press back to leave this game.
+<ul><li>TIP: When there are multiple turns to play you can swipe to the next game</li></ul></div>
+   <div class="speech" id="help2" style="display:none;" onclick="show('help2');"><h3>Pass</h3>
+Pass is used to skip your turn. It’s typically used at the end of a game when you can’t find anywhere to play a letter.</div>
+   <div class="speech" id="help3" style="display:none;" onclick="show('help3');"><h3>Bomb</h3>
+Tap Bomb to blow back all 7 of your letter tiles and receive 7 new ones.
+<ul><li>TIP: Great to use when you have all consonants or vowels or when the point badge turns green on a low number</li></ul></div>
+   <div class="speech" id="help4" style="display:none;" onclick="show('help4');"><h3>Hint</h3>
+Tap Hint to highlight a square that can be used to make an excellent word. The word will cross the hint square in the direction of the arrows. The hint word will always have more points than any word you’ve already found.</div>
+   <div class="speech" id="help5" style="display:none;" onclick="show('help5');"><h3>Game Menu</h3>
+Game Menu has the following options:
+<ul><li>Help</li></ul>
+<ul><li>Swap & Pass &ndash; Pick letter tiles to throw back and get new ones. Then it’s the other player’s turn.</li></ul>
+<ul><li>Resign &ndash; End the game with a loss</li></ul>
+<ul><li>Help &ndash; More detailed help</li></ul>
+<ul><li>Feedback and Support</li></ul></div>
+   <div class="speech" id="help6" style="display:none;" onclick="show('help6');"><h3>Center Square</h3>
+The first word of the game must cross this sun square.</div>
+   <div class="speech" id="help7" style="display:none;" onclick="show('help7');"><h3>Multiplier Squares</h3>
+Multiply the value of a letter or of an entire word. For example: L3 multiplies letter points x 3. W2 multiplies the word points x 2.
+<ul><li>TIP: Crossing multiple multipliers scores big points</li></ul></div>
+   <div class="speech" id="help8" style="display:none;" onclick="show('help8');"><h3>Shuffle/Recall</h3>
+Recall button pulls all letters off the board. It will Shuffle the letters when they’re all in the rack.</div>
+   <div class="speech" id="help9" style="display:none;" onclick="show('help9');"><h3>Page Dots</h3>
+A green dot is shown for every game in which it’s your turn. They turn red after a play in that game.</div>
+   <div class="speech" id="help10" style="display:none;" onclick="show('help10');"><h3>Opponent’s Play</h3>
+Shows the results of your friend’s last turn. Most of the time it shows the word and score but it can also say SWAPPED or PASSED.</div>
+   <div class="speech" id="help11" style="display:none;" onclick="show('help11');"><h3>Your Score</h3>
+Your current score in this game.</div>
+   <div class="speech" id="help12" style="display:none;" onclick="show('help12');"><h3>Your Chum</h3>
+Tapping your chum shows your inventory, stats and achievements.</div>
+   <div class="speech" id="help13" style="display:none;" onclick="show('help13');"><h3>Chat</h3>
+Tap on chat to send a message to your friend. The chat button highlights when you receive a chat.</div>
+   <div class="speech" id="help14" style="display:none;" onclick="show('help14');"><h3>Letter Pile</h3>
+Number of letter tiles remaining to be drawn. The game ends when a player uses all their letters and there are none left to draw.</div>
+   <div class="speech" id="help15" style="display:none;" onclick="show('help15');"><h3>Friend’s Chum</h3>
+Tapping a friend’s chum shows their gear, stats and achievements. Eyeglasses below a chum show they are online and looking at game.</div>
+   <div class="speech" id="help16" style="display:none;" onclick="show('help16');"><h3>Friend’s Score</h3>
+Shows your opponent’s score and the number on the left side of sign is their level.</div>
+   <div class="speech" id="help17" style="display:none;" onclick="show('help17');"><h3>Level and XP bar</h3>
+Your level, current XP (eXperience Points) and the XP to reach the next level. You earn one XP for every point in your word. Gear and Energy Boost give you big XP bonuses. The bar is blue when an Energy drink is active.</div>
+   <div class="speech" id="help18" style="display:none;" onclick="show('help18');"><h3>Coins</h3>
+Your current coin balance. Earn 1 coin for every tile played.</div>
+   <div class="speech" id="help19" style="display:none;" onclick="show('help19');"><h3>Point Badge</h3>
+The point badge calculates the points for the word.  It turns GREEN when the points are over halfway to the best possible score.</div>
+   <div class="speech" id="help20" style="display:none;" onclick="show('help20');"><h3>Dictionary</h3>
+Tap a word on the board to see its definition.</div>
+   <div class="speech" id="help21" style="display:none;" onclick="show('help21');"><h3>Word Power Stars</h3>
+Two stars when the current word's points are 25% or more of the best word. Three stars show you have more than 50% of the best possible score.</div>
+  </div>
+  </div>
+ </div>
+</body>
+</html>

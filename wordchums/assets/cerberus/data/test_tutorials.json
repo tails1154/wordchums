@@ -1,0 +1,127 @@
+[{"owner":"GameScene", "action":"ShowTutorial", "index":3},
+ {"owner":"Commands", "action":"Wait", "seconds":2.0},
+ {"owner":"TutorialPopup", "action":"Close"},
+ {"owner":"Commands", "action":"Wait", "seconds":1.0},
+ 
+ {"owner":"GameScene", "action":"ShowTutorial", "index":4},
+ {"owner":"Commands", "action":"Wait", "seconds":2.0},
+ {"owner":"TutorialPopup", "action":"Close"},
+ {"owner":"Commands", "action":"Wait", "seconds":1.0},
+ 
+ {"owner":"GameScene", "action":"ShowTutorial", "index":8},
+ {"owner":"Commands", "action":"Wait", "seconds":2.0},
+ {"owner":"TutorialPopup", "action":"Close"},
+ {"owner":"Commands", "action":"Wait", "seconds":1.0},
+ 
+ {"owner":"GameScene", "action":"ShowTutorial", "index":9},
+ {"owner":"Commands", "action":"Wait", "seconds":2.0},
+ {"owner":"TutorialPopup", "action":"Close"},
+ {"owner":"Commands", "action":"Wait", "seconds":1.0},
+ 
+ {"owner":"GameScene", "action":"ShowTutorial", "index":17},
+ {"owner":"Commands", "action":"Wait", "seconds":2.0},
+ {"owner":"TutorialPopup", "action":"Close"},
+ {"owner":"Commands", "action":"Wait", "seconds":1.0},
+ 
+ {"owner":"GameScene", "action":"ShowTutorial", "index":18},
+ {"owner":"Commands", "action":"Wait", "seconds":2.0},
+ {"owner":"TutorialPopup", "action":"Close"},
+ {"owner":"Commands", "action":"Wait", "seconds":1.0},
+ 
+ {"owner":"GameScene", "action":"ShowTutorial", "index":19},
+ {"owner":"Commands", "action":"Wait", "seconds":2.0},
+ {"owner":"TutorialPopup", "action":"Close"},
+ {"owner":"Commands", "action":"Wait", "seconds":1.0},
+ 
+ {"owner":"GameScene", "action":"ShowTutorial", "index":20},
+ {"owner":"Commands", "action":"Wait", "seconds":2.0},
+ {"owner":"TutorialPopup", "action":"Close"},
+ {"owner":"Commands", "action":"Wait", "seconds":1.0},
+ 
+ {"owner":"GameScene", "action":"ShowTutorial", "index":21},
+ {"owner":"Commands", "action":"Wait", "seconds":2.0},
+ {"owner":"TutorialPopup", "action":"Close"},
+ {"owner":"Commands", "action":"Wait", "seconds":1.0},
+ 
+ {"owner":"GameScene", "action":"ShowTutorial", "index":22},
+ {"owner":"Commands", "action":"Wait", "seconds":2.0},
+ {"owner":"TutorialPopup", "action":"Close"},
+ {"owner":"Commands", "action":"Wait", "seconds":1.0},
+ 
+ {"owner":"GameScene", "action":"ShowTutorial", "index":26},
+ {"owner":"Commands", "action":"Wait", "seconds":2.0},
+ {"owner":"TutorialPopup", "action":"Close"},
+ {"owner":"Commands", "action":"Wait", "seconds":1.0},
+ 
+ {"owner":"GameScene", "action":"ShowTutorial", "index":27},
+ {"owner":"Commands", "action":"Wait", "seconds":2.0},
+ {"owner":"TutorialPopup", "action":"Close"},
+ {"owner":"Commands", "action":"Wait", "seconds":1.0},
+ 
+ {"owner":"GameScene", "action":"ShowTutorial", "index":29},
+ {"owner":"Commands", "action":"Wait", "seconds":2.0},
+ {"owner":"TutorialPopup", "action":"Close"},
+ {"owner":"Commands", "action":"Wait", "seconds":1.0},
+ 
+ {"owner":"GameScene", "action":"ShowTutorial", "index":30},
+ {"owner":"Commands", "action":"Wait", "seconds":2.0},
+ {"owner":"TutorialPopup", "action":"Close"},
+ {"owner":"Commands", "action":"Wait", "seconds":1.0},
+ 
+ {"owner":"GameScene", "action":"ShowTutorial", "index":31},
+ {"owner":"Commands", "action":"Wait", "seconds":2.0},
+ {"owner":"TutorialPopup", "action":"Close"},
+ {"owner":"Commands", "action":"Wait", "seconds":1.0},
+ 
+ {"owner":"GameScene", "action":"ShowTutorial", "index":32},
+ {"owner":"Commands", "action":"Wait", "seconds":2.0},
+ {"owner":"TutorialPopup", "action":"Close"},
+ {"owner":"Commands", "action":"Wait", "seconds":1.0},
+ 
+ {"owner":"GameScene", "action":"ShowTutorial", "index":34},
+ {"owner":"Commands", "action":"Wait", "seconds":2.0},
+ {"owner":"TutorialPopup", "action":"Close"},
+ {"owner":"Commands", "action":"Wait", "seconds":1.0},
+ 
+ {"owner":"GameScene", "action":"ShowTutorial", "index":35},
+ {"owner":"Commands", "action":"Wait", "seconds":2.0},
+ {"owner":"TutorialPopup", "action":"Close"},
+ {"owner":"Commands", "action":"Wait", "seconds":1.0},
+ 
+ {"owner":"GameScene", "action":"ShowTutorial", "index":36},
+ {"owner":"Commands", "action":"Wait", "seconds":2.0},
+ {"owner":"TutorialPopup", "action":"Close"},
+ {"owner":"Commands", "action":"Wait", "seconds":1.0},
+    
+ {"owner":"GameApp", "action":"ShowMainScene"},
+ 
+ {"owner":"MainScene", "action":"ShowTutorial", "index":16},
+ {"owner":"Commands", "action":"Wait", "seconds":2.0},
+ {"owner":"TutorialPopup", "action":"Close"},
+ {"owner":"Commands", "action":"Wait", "seconds":1.0},
+ 
+ {"owner":"MainScene", "action":"ShowTutorial", "index":28},
+ {"owner":"Commands", "action":"Wait", "seconds":2.0},
+ {"owner":"TutorialPopup", "action":"Close"},
+ {"owner":"Commands", "action":"Wait", "seconds":1.0},
+ 
+ {"owner":"MainScene", "action":"ShowTutorial", "index":33},
+ {"owner":"Commands", "action":"Wait", "seconds":2.0},
+ {"owner":"TutorialPopup", "action":"Close"},
+ {"owner":"Commands", "action":"Wait", "seconds":1.0},
+ 
+ {"owner":"MainScene", "action":"ShowTutorial", "index":37},
+ {"owner":"Commands", "action":"Wait", "seconds":2.0},
+ {"owner":"TutorialPopup", "action":"Close"},
+ {"owner":"Commands", "action":"Wait", "seconds":1.0},
+ 
+ {"owner":"MainScene", "action":"ShowTutorial", "index":38},
+ {"owner":"Commands", "action":"Wait", "seconds":2.0},
+ {"owner":"TutorialPopup", "action":"Close"},
+ {"owner":"Commands", "action":"Wait", "seconds":1.0},
+ 
+ {"owner":"GameApp", "action":"ShowStoreScene"},
+ {"owner":"StoreScene", "action":"ShowTutorial", "index":24},
+ {"owner":"Commands", "action":"Wait", "seconds":2.0},
+ {"owner":"TutorialPopup", "action":"Close"},
+ {"owner":"Commands", "action":"Wait", "seconds":1.0}]

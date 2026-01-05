@@ -1,0 +1,1 @@
+{"emitters":[{"animScale":false,"forces":[{"type":"constant","x":0.0,"y":5.75518798828125}],"image":"particle_sand_debris","life":"2.20","life_r":".27","name":"sand","rate":".51","spwn_ys":"44","sscale":"1.59","sscale_r":".32","vx":"41","x":"20","y":"7"}],"maxParticles":748,"skipForwardBase":"3.45","testImage":"holditem_sandcastle_01"}

@@ -1,0 +1,27 @@
+.class public final Lcom/linkedin/audiencenetwork/core/internal/BuildConfig;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static final BUILD_TYPE:Ljava/lang/String; = "release"
+
+.field public static final DEBUG:Z = false
+
+.field public static final LAN_SDK_VERSION_NAME:Ljava/lang/String; = "0.0.6"
+
+.field public static final LIBRARY_PACKAGE_NAME:Ljava/lang/String; = "com.linkedin.audiencenetwork.core.internal"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    return-void
+.end method

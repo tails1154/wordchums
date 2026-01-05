@@ -1,0 +1,14 @@
+{
+   "screenSize": { "w": 640, "h": 960 },
+   "anims":
+   [
+      {
+         "type": "default",
+         "movie": "winscreen02",
+         "scale": 1.00,
+         "anchor": { "x": 2, "y": -22 },
+         "loop": false,
+         "sound": "game_won"
+      }
+   ]
+}

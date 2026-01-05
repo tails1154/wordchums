@@ -1,0 +1,21 @@
+{
+  "baseImages": [
+    "ufo03",
+    "loading_standin",
+    "signal"
+  ],
+  "replacementImages": [
+    {
+      "replacement": "ufo03",
+      "base": "ufo03"
+    },
+    {
+      "replacement": "loading_standin",
+      "base": "loading_standin"
+    },
+    {
+      "replacement": "signal",
+      "base": "signal"
+    }
+  ]
+}

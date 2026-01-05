@@ -1,0 +1,9 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head><title>word-chums</title></head>
+<body><div style="font-family:sans-serif">
+Hey friend_name,<br><br>I've started a game of Word Chums with you! It's an awesome new iPhone game we're all playing.<br><br>
+It's your turn... <br><br><b><center>Your letters:<br><span style="color:#0000ff">friend_letters</span></b><br>
+<a href="http://tails1154games.appspot.com/redir"><img src="http://tails1154games.appspot.com/static/invite_button.jpg" alt=""  border=0></a>
+<br><a href="http://tails1154games.appspot.com/redir">Take your turn</a><br><a href="wc_web_link"><image src="http://tails1154games.appspot.com/static/invite_bottom.jpg"></a></center>
+</div></body></html>

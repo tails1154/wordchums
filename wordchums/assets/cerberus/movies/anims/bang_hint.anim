@@ -1,0 +1,32 @@
+{
+    "replacementImages": [
+        {
+            "replacement": "",
+            "base": "photo1"
+        },
+        {
+            "replacement": "",
+            "base": ""
+        },
+        {
+            "replacement": "firework_red",
+            "base": "firework_red"
+        },
+        {
+            "replacement": "fireworks_sign",
+            "base": "fireworks_sign"
+        },
+        {
+            "replacement": "fireworks_hint",
+            "base": "fireworks_best"
+        },
+        {
+            "replacement": "firework_green",
+            "base": "firework_green"
+        },
+        {
+            "replacement": "firework_explosion",
+            "base": "firework_explosion"
+        }
+    ]
+}

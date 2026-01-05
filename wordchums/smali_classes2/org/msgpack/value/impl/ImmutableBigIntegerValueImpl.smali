@@ -1,0 +1,1465 @@
+.class public Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;
+.super Lorg/msgpack/value/impl/a;
+.source "SourceFile"
+
+# interfaces
+.implements Lorg/msgpack/value/ImmutableIntegerValue;
+
+
+# static fields
+.field private static final BYTE_MAX:Ljava/math/BigInteger;
+
+.field private static final BYTE_MIN:Ljava/math/BigInteger;
+
+.field private static final INT_MAX:Ljava/math/BigInteger;
+
+.field private static final INT_MIN:Ljava/math/BigInteger;
+
+.field private static final LONG_MAX:Ljava/math/BigInteger;
+
+.field private static final LONG_MIN:Ljava/math/BigInteger;
+
+.field private static final SHORT_MAX:Ljava/math/BigInteger;
+
+.field private static final SHORT_MIN:Ljava/math/BigInteger;
+
+
+# instance fields
+.field private final value:Ljava/math/BigInteger;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    .line 2
+    const-wide/16 v0, -0x80
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-static {v0, v1}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
+
+    .line 6
+    move-result-object v0
+
+    .line 7
+    .line 8
+    sput-object v0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->BYTE_MIN:Ljava/math/BigInteger;
+
+    .line 9
+    .line 10
+    const-wide/16 v0, 0x7f
+
+    .line 11
+    .line 12
+    .line 13
+    invoke-static {v0, v1}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
+
+    .line 14
+    move-result-object v0
+
+    .line 15
+    .line 16
+    sput-object v0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->BYTE_MAX:Ljava/math/BigInteger;
+
+    .line 17
+    .line 18
+    const-wide/16 v0, -0x8000
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-static {v0, v1}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
+
+    .line 22
+    move-result-object v0
+
+    .line 23
+    .line 24
+    sput-object v0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->SHORT_MIN:Ljava/math/BigInteger;
+
+    .line 25
+    .line 26
+    const-wide/16 v0, 0x7fff
+
+    .line 27
+    .line 28
+    .line 29
+    invoke-static {v0, v1}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
+
+    .line 30
+    move-result-object v0
+
+    .line 31
+    .line 32
+    sput-object v0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->SHORT_MAX:Ljava/math/BigInteger;
+
+    .line 33
+    .line 34
+    .line 35
+    const-wide/32 v0, -0x80000000
+
+    .line 36
+    .line 37
+    .line 38
+    invoke-static {v0, v1}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
+
+    .line 39
+    move-result-object v0
+
+    .line 40
+    .line 41
+    sput-object v0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->INT_MIN:Ljava/math/BigInteger;
+
+    .line 42
+    .line 43
+    .line 44
+    const-wide/32 v0, 0x7fffffff
+
+    .line 45
+    .line 46
+    .line 47
+    invoke-static {v0, v1}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
+
+    .line 48
+    move-result-object v0
+
+    .line 49
+    .line 50
+    sput-object v0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->INT_MAX:Ljava/math/BigInteger;
+
+    .line 51
+    .line 52
+    const-wide/high16 v0, -0x8000000000000000L
+
+    .line 53
+    .line 54
+    .line 55
+    invoke-static {v0, v1}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
+
+    .line 56
+    move-result-object v0
+
+    .line 57
+    .line 58
+    sput-object v0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->LONG_MIN:Ljava/math/BigInteger;
+
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    const-wide v0, 0x7fffffffffffffffL
+
+    .line 64
+    .line 65
+    .line 66
+    invoke-static {v0, v1}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
+
+    .line 67
+    move-result-object v0
+
+    .line 68
+    .line 69
+    sput-object v0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->LONG_MAX:Ljava/math/BigInteger;
+
+    .line 70
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/math/BigInteger;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Lorg/msgpack/value/impl/a;-><init>()V
+
+    .line 4
+    .line 5
+    iput-object p1, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 6
+    return-void
+.end method
+
+.method public static mostSuccinctMessageFormat(Lorg/msgpack/value/IntegerValue;)Lorg/msgpack/core/MessageFormat;
+    .locals 1
+
+    .line 1
+    invoke-interface {p0}, Lorg/msgpack/value/IntegerValue;->isInByteRange()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    sget-object p0, Lorg/msgpack/core/MessageFormat;->INT8:Lorg/msgpack/core/MessageFormat;
+
+    return-object p0
+
+    .line 3
+    :cond_0
+    invoke-interface {p0}, Lorg/msgpack/value/IntegerValue;->isInShortRange()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 4
+    sget-object p0, Lorg/msgpack/core/MessageFormat;->INT16:Lorg/msgpack/core/MessageFormat;
+
+    return-object p0
+
+    .line 5
+    :cond_1
+    invoke-interface {p0}, Lorg/msgpack/value/IntegerValue;->isInIntRange()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    .line 6
+    sget-object p0, Lorg/msgpack/core/MessageFormat;->INT32:Lorg/msgpack/core/MessageFormat;
+
+    return-object p0
+
+    .line 7
+    :cond_2
+    invoke-interface {p0}, Lorg/msgpack/value/IntegerValue;->isInLongRange()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_3
+
+    .line 8
+    sget-object p0, Lorg/msgpack/core/MessageFormat;->INT64:Lorg/msgpack/core/MessageFormat;
+
+    return-object p0
+
+    .line 9
+    :cond_3
+    sget-object p0, Lorg/msgpack/core/MessageFormat;->UINT64:Lorg/msgpack/core/MessageFormat;
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public bridge synthetic asArrayValue()Lorg/msgpack/value/ImmutableArrayValue;
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-super {p0}, Lorg/msgpack/value/impl/a;->asArrayValue()Lorg/msgpack/value/ImmutableArrayValue;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public asBigInteger()Ljava/math/BigInteger;
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 3
+    return-object v0
+.end method
+
+.method public bridge synthetic asBinaryValue()Lorg/msgpack/value/ImmutableBinaryValue;
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-super {p0}, Lorg/msgpack/value/impl/a;->asBinaryValue()Lorg/msgpack/value/ImmutableBinaryValue;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public bridge synthetic asBooleanValue()Lorg/msgpack/value/ImmutableBooleanValue;
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-super {p0}, Lorg/msgpack/value/impl/a;->asBooleanValue()Lorg/msgpack/value/ImmutableBooleanValue;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public asByte()B
+    .locals 2
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->isInByteRange()Z
+
+    .line 4
+    move-result v0
+
+    .line 5
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    iget-object v0, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-virtual {v0}, Ljava/lang/Number;->byteValue()B
+
+    .line 12
+    move-result v0
+
+    .line 13
+    return v0
+
+    .line 14
+    .line 15
+    :cond_0
+    new-instance v0, Lorg/msgpack/core/MessageIntegerOverflowException;
+
+    .line 16
+    .line 17
+    iget-object v1, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 18
+    .line 19
+    .line 20
+    invoke-direct {v0, v1}, Lorg/msgpack/core/MessageIntegerOverflowException;-><init>(Ljava/math/BigInteger;)V
+
+    .line 21
+    throw v0
+.end method
+
+.method public bridge synthetic asExtensionValue()Lorg/msgpack/value/ImmutableExtensionValue;
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-super {p0}, Lorg/msgpack/value/impl/a;->asExtensionValue()Lorg/msgpack/value/ImmutableExtensionValue;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public bridge synthetic asFloatValue()Lorg/msgpack/value/ImmutableFloatValue;
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-super {p0}, Lorg/msgpack/value/impl/a;->asFloatValue()Lorg/msgpack/value/ImmutableFloatValue;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public asInt()I
+    .locals 2
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->isInIntRange()Z
+
+    .line 4
+    move-result v0
+
+    .line 5
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    iget-object v0, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-virtual {v0}, Ljava/math/BigInteger;->intValue()I
+
+    .line 12
+    move-result v0
+
+    .line 13
+    return v0
+
+    .line 14
+    .line 15
+    :cond_0
+    new-instance v0, Lorg/msgpack/core/MessageIntegerOverflowException;
+
+    .line 16
+    .line 17
+    iget-object v1, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 18
+    .line 19
+    .line 20
+    invoke-direct {v0, v1}, Lorg/msgpack/core/MessageIntegerOverflowException;-><init>(Ljava/math/BigInteger;)V
+
+    .line 21
+    throw v0
+.end method
+
+.method public asIntegerValue()Lorg/msgpack/value/ImmutableIntegerValue;
+    .locals 0
+
+    .line 1
+    return-object p0
+.end method
+
+.method public bridge synthetic asIntegerValue()Lorg/msgpack/value/IntegerValue;
+    .locals 1
+
+    .line 2
+    invoke-virtual {p0}, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->asIntegerValue()Lorg/msgpack/value/ImmutableIntegerValue;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public asLong()J
+    .locals 2
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->isInLongRange()Z
+
+    .line 4
+    move-result v0
+
+    .line 5
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    iget-object v0, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-virtual {v0}, Ljava/math/BigInteger;->longValue()J
+
+    .line 12
+    move-result-wide v0
+
+    .line 13
+    return-wide v0
+
+    .line 14
+    .line 15
+    :cond_0
+    new-instance v0, Lorg/msgpack/core/MessageIntegerOverflowException;
+
+    .line 16
+    .line 17
+    iget-object v1, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 18
+    .line 19
+    .line 20
+    invoke-direct {v0, v1}, Lorg/msgpack/core/MessageIntegerOverflowException;-><init>(Ljava/math/BigInteger;)V
+
+    .line 21
+    throw v0
+.end method
+
+.method public bridge synthetic asMapValue()Lorg/msgpack/value/ImmutableMapValue;
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-super {p0}, Lorg/msgpack/value/impl/a;->asMapValue()Lorg/msgpack/value/ImmutableMapValue;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public bridge synthetic asNilValue()Lorg/msgpack/value/ImmutableNilValue;
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-super {p0}, Lorg/msgpack/value/impl/a;->asNilValue()Lorg/msgpack/value/ImmutableNilValue;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public asNumberValue()Lorg/msgpack/value/ImmutableNumberValue;
+    .locals 0
+
+    .line 1
+    return-object p0
+.end method
+
+.method public bridge synthetic asNumberValue()Lorg/msgpack/value/NumberValue;
+    .locals 1
+
+    .line 2
+    invoke-virtual {p0}, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->asNumberValue()Lorg/msgpack/value/ImmutableNumberValue;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic asRawValue()Lorg/msgpack/value/ImmutableRawValue;
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-super {p0}, Lorg/msgpack/value/impl/a;->asRawValue()Lorg/msgpack/value/ImmutableRawValue;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public asShort()S
+    .locals 2
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->isInShortRange()Z
+
+    .line 4
+    move-result v0
+
+    .line 5
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    iget-object v0, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-virtual {v0}, Ljava/lang/Number;->shortValue()S
+
+    .line 12
+    move-result v0
+
+    .line 13
+    return v0
+
+    .line 14
+    .line 15
+    :cond_0
+    new-instance v0, Lorg/msgpack/core/MessageIntegerOverflowException;
+
+    .line 16
+    .line 17
+    iget-object v1, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 18
+    .line 19
+    .line 20
+    invoke-direct {v0, v1}, Lorg/msgpack/core/MessageIntegerOverflowException;-><init>(Ljava/math/BigInteger;)V
+
+    .line 21
+    throw v0
+.end method
+
+.method public bridge synthetic asStringValue()Lorg/msgpack/value/ImmutableStringValue;
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-super {p0}, Lorg/msgpack/value/impl/a;->asStringValue()Lorg/msgpack/value/ImmutableStringValue;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .locals 2
+
+    .line 1
+    .line 2
+    if-ne p1, p0, :cond_0
+
+    .line 3
+    const/4 p1, 0x1
+
+    .line 4
+    return p1
+
+    .line 5
+    .line 6
+    :cond_0
+    instance-of v0, p1, Lorg/msgpack/value/Value;
+
+    .line 7
+    const/4 v1, 0x0
+
+    .line 8
+    .line 9
+    if-nez v0, :cond_1
+
+    .line 10
+    return v1
+
+    .line 11
+    .line 12
+    :cond_1
+    check-cast p1, Lorg/msgpack/value/Value;
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-interface {p1}, Lorg/msgpack/value/Value;->isIntegerValue()Z
+
+    .line 16
+    move-result v0
+
+    .line 17
+    .line 18
+    if-nez v0, :cond_2
+
+    .line 19
+    return v1
+
+    .line 20
+    .line 21
+    .line 22
+    :cond_2
+    invoke-interface {p1}, Lorg/msgpack/value/Value;->asIntegerValue()Lorg/msgpack/value/IntegerValue;
+
+    .line 23
+    move-result-object p1
+
+    .line 24
+    .line 25
+    iget-object v0, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-interface {p1}, Lorg/msgpack/value/NumberValue;->toBigInteger()Ljava/math/BigInteger;
+
+    .line 29
+    move-result-object p1
+
+    .line 30
+    .line 31
+    .line 32
+    invoke-virtual {v0, p1}, Ljava/math/BigInteger;->equals(Ljava/lang/Object;)Z
+
+    .line 33
+    move-result p1
+
+    .line 34
+    return p1
+.end method
+
+.method public getValueType()Lorg/msgpack/value/ValueType;
+    .locals 1
+
+    .line 1
+    .line 2
+    sget-object v0, Lorg/msgpack/value/ValueType;->INTEGER:Lorg/msgpack/value/ValueType;
+
+    .line 3
+    return-object v0
+.end method
+
+.method public hashCode()I
+    .locals 4
+
+    .line 1
+    .line 2
+    sget-object v0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->INT_MIN:Ljava/math/BigInteger;
+
+    .line 3
+    .line 4
+    iget-object v1, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-virtual {v0, v1}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
+
+    .line 8
+    move-result v0
+
+    .line 9
+    .line 10
+    if-gtz v0, :cond_0
+
+    .line 11
+    .line 12
+    iget-object v0, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 13
+    .line 14
+    sget-object v1, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->INT_MAX:Ljava/math/BigInteger;
+
+    .line 15
+    .line 16
+    .line 17
+    invoke-virtual {v0, v1}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
+
+    .line 18
+    move-result v0
+
+    .line 19
+    .line 20
+    if-gtz v0, :cond_0
+
+    .line 21
+    .line 22
+    iget-object v0, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 23
+    .line 24
+    .line 25
+    invoke-virtual {v0}, Ljava/math/BigInteger;->longValue()J
+
+    .line 26
+    move-result-wide v0
+
+    .line 27
+    long-to-int v0, v0
+
+    .line 28
+    return v0
+
+    .line 29
+    .line 30
+    :cond_0
+    sget-object v0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->LONG_MIN:Ljava/math/BigInteger;
+
+    .line 31
+    .line 32
+    iget-object v1, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 33
+    .line 34
+    .line 35
+    invoke-virtual {v0, v1}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
+
+    .line 36
+    move-result v0
+
+    .line 37
+    .line 38
+    if-gtz v0, :cond_1
+
+    .line 39
+    .line 40
+    iget-object v0, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 41
+    .line 42
+    sget-object v1, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->LONG_MAX:Ljava/math/BigInteger;
+
+    .line 43
+    .line 44
+    .line 45
+    invoke-virtual {v0, v1}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
+
+    .line 46
+    move-result v0
+
+    .line 47
+    .line 48
+    if-gtz v0, :cond_1
+
+    .line 49
+    .line 50
+    iget-object v0, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 51
+    .line 52
+    .line 53
+    invoke-virtual {v0}, Ljava/math/BigInteger;->longValue()J
+
+    .line 54
+    move-result-wide v0
+
+    .line 55
+    .line 56
+    const/16 v2, 0x20
+
+    .line 57
+    .line 58
+    ushr-long v2, v0, v2
+
+    .line 59
+    xor-long/2addr v0, v2
+
+    .line 60
+    long-to-int v0, v0
+
+    .line 61
+    return v0
+
+    .line 62
+    .line 63
+    :cond_1
+    iget-object v0, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 64
+    .line 65
+    .line 66
+    invoke-virtual {v0}, Ljava/math/BigInteger;->hashCode()I
+
+    .line 67
+    move-result v0
+
+    .line 68
+    return v0
+.end method
+
+.method public immutableValue()Lorg/msgpack/value/ImmutableIntegerValue;
+    .locals 0
+
+    .line 1
+    return-object p0
+.end method
+
+.method public bridge synthetic immutableValue()Lorg/msgpack/value/ImmutableValue;
+    .locals 1
+
+    .line 2
+    invoke-virtual {p0}, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->immutableValue()Lorg/msgpack/value/ImmutableIntegerValue;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic isArrayValue()Z
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-super {p0}, Lorg/msgpack/value/impl/a;->isArrayValue()Z
+
+    .line 4
+    move-result v0
+
+    .line 5
+    return v0
+.end method
+
+.method public bridge synthetic isBinaryValue()Z
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-super {p0}, Lorg/msgpack/value/impl/a;->isBinaryValue()Z
+
+    .line 4
+    move-result v0
+
+    .line 5
+    return v0
+.end method
+
+.method public bridge synthetic isBooleanValue()Z
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-super {p0}, Lorg/msgpack/value/impl/a;->isBooleanValue()Z
+
+    .line 4
+    move-result v0
+
+    .line 5
+    return v0
+.end method
+
+.method public bridge synthetic isExtensionValue()Z
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-super {p0}, Lorg/msgpack/value/impl/a;->isExtensionValue()Z
+
+    .line 4
+    move-result v0
+
+    .line 5
+    return v0
+.end method
+
+.method public bridge synthetic isFloatValue()Z
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-super {p0}, Lorg/msgpack/value/impl/a;->isFloatValue()Z
+
+    .line 4
+    move-result v0
+
+    .line 5
+    return v0
+.end method
+
+.method public isInByteRange()Z
+    .locals 2
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 3
+    .line 4
+    sget-object v1, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->BYTE_MIN:Ljava/math/BigInteger;
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-virtual {v0, v1}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
+
+    .line 8
+    move-result v0
+
+    .line 9
+    .line 10
+    if-ltz v0, :cond_0
+
+    .line 11
+    .line 12
+    iget-object v0, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 13
+    .line 14
+    sget-object v1, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->BYTE_MAX:Ljava/math/BigInteger;
+
+    .line 15
+    .line 16
+    .line 17
+    invoke-virtual {v0, v1}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
+
+    .line 18
+    move-result v0
+
+    .line 19
+    .line 20
+    if-gtz v0, :cond_0
+
+    .line 21
+    const/4 v0, 0x1
+
+    .line 22
+    return v0
+
+    .line 23
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 24
+    return v0
+.end method
+
+.method public isInIntRange()Z
+    .locals 2
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 3
+    .line 4
+    sget-object v1, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->INT_MIN:Ljava/math/BigInteger;
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-virtual {v0, v1}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
+
+    .line 8
+    move-result v0
+
+    .line 9
+    .line 10
+    if-ltz v0, :cond_0
+
+    .line 11
+    .line 12
+    iget-object v0, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 13
+    .line 14
+    sget-object v1, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->INT_MAX:Ljava/math/BigInteger;
+
+    .line 15
+    .line 16
+    .line 17
+    invoke-virtual {v0, v1}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
+
+    .line 18
+    move-result v0
+
+    .line 19
+    .line 20
+    if-gtz v0, :cond_0
+
+    .line 21
+    const/4 v0, 0x1
+
+    .line 22
+    return v0
+
+    .line 23
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 24
+    return v0
+.end method
+
+.method public isInLongRange()Z
+    .locals 2
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 3
+    .line 4
+    sget-object v1, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->LONG_MIN:Ljava/math/BigInteger;
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-virtual {v0, v1}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
+
+    .line 8
+    move-result v0
+
+    .line 9
+    .line 10
+    if-ltz v0, :cond_0
+
+    .line 11
+    .line 12
+    iget-object v0, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 13
+    .line 14
+    sget-object v1, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->LONG_MAX:Ljava/math/BigInteger;
+
+    .line 15
+    .line 16
+    .line 17
+    invoke-virtual {v0, v1}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
+
+    .line 18
+    move-result v0
+
+    .line 19
+    .line 20
+    if-gtz v0, :cond_0
+
+    .line 21
+    const/4 v0, 0x1
+
+    .line 22
+    return v0
+
+    .line 23
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 24
+    return v0
+.end method
+
+.method public isInShortRange()Z
+    .locals 2
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 3
+    .line 4
+    sget-object v1, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->SHORT_MIN:Ljava/math/BigInteger;
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-virtual {v0, v1}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
+
+    .line 8
+    move-result v0
+
+    .line 9
+    .line 10
+    if-ltz v0, :cond_0
+
+    .line 11
+    .line 12
+    iget-object v0, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 13
+    .line 14
+    sget-object v1, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->SHORT_MAX:Ljava/math/BigInteger;
+
+    .line 15
+    .line 16
+    .line 17
+    invoke-virtual {v0, v1}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
+
+    .line 18
+    move-result v0
+
+    .line 19
+    .line 20
+    if-gtz v0, :cond_0
+
+    .line 21
+    const/4 v0, 0x1
+
+    .line 22
+    return v0
+
+    .line 23
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 24
+    return v0
+.end method
+
+.method public bridge synthetic isIntegerValue()Z
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-super {p0}, Lorg/msgpack/value/impl/a;->isIntegerValue()Z
+
+    .line 4
+    move-result v0
+
+    .line 5
+    return v0
+.end method
+
+.method public bridge synthetic isMapValue()Z
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-super {p0}, Lorg/msgpack/value/impl/a;->isMapValue()Z
+
+    .line 4
+    move-result v0
+
+    .line 5
+    return v0
+.end method
+
+.method public bridge synthetic isNilValue()Z
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-super {p0}, Lorg/msgpack/value/impl/a;->isNilValue()Z
+
+    .line 4
+    move-result v0
+
+    .line 5
+    return v0
+.end method
+
+.method public bridge synthetic isNumberValue()Z
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-super {p0}, Lorg/msgpack/value/impl/a;->isNumberValue()Z
+
+    .line 4
+    move-result v0
+
+    .line 5
+    return v0
+.end method
+
+.method public bridge synthetic isRawValue()Z
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-super {p0}, Lorg/msgpack/value/impl/a;->isRawValue()Z
+
+    .line 4
+    move-result v0
+
+    .line 5
+    return v0
+.end method
+
+.method public bridge synthetic isStringValue()Z
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-super {p0}, Lorg/msgpack/value/impl/a;->isStringValue()Z
+
+    .line 4
+    move-result v0
+
+    .line 5
+    return v0
+.end method
+
+.method public mostSuccinctMessageFormat()Lorg/msgpack/core/MessageFormat;
+    .locals 1
+
+    .line 10
+    invoke-static {p0}, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->mostSuccinctMessageFormat(Lorg/msgpack/value/IntegerValue;)Lorg/msgpack/core/MessageFormat;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public toBigInteger()Ljava/math/BigInteger;
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 3
+    return-object v0
+.end method
+
+.method public toByte()B
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Ljava/lang/Number;->byteValue()B
+
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public toDouble()D
+    .locals 2
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Ljava/math/BigInteger;->doubleValue()D
+
+    .line 6
+    move-result-wide v0
+
+    .line 7
+    return-wide v0
+.end method
+
+.method public toFloat()F
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Ljava/math/BigInteger;->floatValue()F
+
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public toInt()I
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Ljava/math/BigInteger;->intValue()I
+
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public toJson()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Ljava/math/BigInteger;->toString()Ljava/lang/String;
+
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public toLong()J
+    .locals 2
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Ljava/math/BigInteger;->longValue()J
+
+    .line 6
+    move-result-wide v0
+
+    .line 7
+    return-wide v0
+.end method
+
+.method public toShort()S
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Ljava/lang/Number;->shortValue()S
+
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->toJson()Ljava/lang/String;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public writeTo(Lorg/msgpack/core/MessagePacker;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lorg/msgpack/value/impl/ImmutableBigIntegerValueImpl;->value:Ljava/math/BigInteger;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-virtual {p1, v0}, Lorg/msgpack/core/MessagePacker;->packBigInteger(Ljava/math/BigInteger;)Lorg/msgpack/core/MessagePacker;
+
+    .line 6
+    return-void
+.end method

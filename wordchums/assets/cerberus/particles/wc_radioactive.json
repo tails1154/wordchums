@@ -1,0 +1,1 @@
+{"emitters":[{"b":0,"forces":[{"a":-19.02508544921875,"type":"point"}],"image":"bubble01","life":"1.81","life_r":".17","r":0,"rate":"1.45","spwn_mn":"36","spwn_mx":"36","sscale":".83","sscale_r":".57","vx_r":"20","vy_r":"16"}],"maxParticles":1000,"skipForwardBase":"3.45","testImage":"holditem_radioactive_01"}

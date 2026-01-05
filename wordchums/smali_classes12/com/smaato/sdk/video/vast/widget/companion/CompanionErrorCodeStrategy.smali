@@ -1,0 +1,53 @@
+.class public final Lcom/smaato/sdk/video/vast/widget/companion/CompanionErrorCodeStrategy;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/smaato/sdk/video/vast/widget/element/VastElementErrorCodeStrategy;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public getVastErrorCode(Lcom/smaato/sdk/video/vast/widget/element/VastElementException;)I
+    .locals 0
+    .param p1    # Lcom/smaato/sdk/video/vast/widget/element/VastElementException;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    .line 2
+    instance-of p1, p1, Lcom/smaato/sdk/video/vast/widget/element/VastElementLoadingException;
+
+    .line 3
+    .line 4
+    if-eqz p1, :cond_0
+
+    .line 5
+    .line 6
+    const/16 p1, 0x25b
+
+    .line 7
+    return p1
+
+    .line 8
+    .line 9
+    :cond_0
+    const/16 p1, 0x384
+
+    .line 10
+    return p1
+.end method

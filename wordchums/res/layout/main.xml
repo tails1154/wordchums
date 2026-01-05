@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/mainLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:id="@id/gameView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="false" class="com.tails1154.wordchums.MonkeyGame$GameView" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/banner_parent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <FrameLayout android:id="@id/banner_bottom_buffer" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+    </LinearLayout>
+</FrameLayout>

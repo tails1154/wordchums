@@ -1,0 +1,13 @@
+{
+   "screenSize": { "w": 640, "h": 960 },
+   "anims":
+   [
+      {
+         "type": "default",
+         "movie": "tutorial_arrow",
+         "scale": 1.00,
+         "anchor": { "x": 214, "y": 76 },
+         "loop": true
+      }
+   ]
+}

@@ -1,0 +1,21 @@
+{
+	"baseImages":
+	[
+		"cape",
+		"body_front_base_01",
+		"armleft_hold_base_01"
+	],
+	"accessories": 
+	[
+		{
+			"pose": "front",
+			"order": 1,
+			"type": "head"
+		},
+		{
+			"pose": "upright",
+			"order": 0,
+			"type": "hold"
+		}
+	]
+}

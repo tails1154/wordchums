@@ -1,0 +1,41 @@
+.class public Lcom/pubnub/api/PnGcmMessage;
+.super Lorg/json/JSONObject;
+.source "SourceFile"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lorg/json/JSONObject;-><init>()V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lorg/json/JSONObject;)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Lorg/json/JSONObject;-><init>()V
+
+    invoke-virtual {p0, p1}, Lcom/pubnub/api/PnGcmMessage;->setData(Lorg/json/JSONObject;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public setData(Lorg/json/JSONObject;)V
+    .locals 1
+
+    :try_start_0
+    const-string v0, "data"
+
+    invoke-virtual {p0, v0, p1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    return-void
+.end method

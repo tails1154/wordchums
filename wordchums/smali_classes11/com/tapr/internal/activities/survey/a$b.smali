@@ -1,0 +1,37 @@
+.class public interface abstract Lcom/tapr/internal/activities/survey/a$b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/tapr/internal/activities/survey/a;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "b"
+.end annotation
+
+
+# virtual methods
+.method public abstract finish()V
+.end method
+
+.method public abstract getCookie(Ljava/lang/String;)Ljava/lang/String;
+.end method
+
+.method public abstract hideProgressDialog()V
+.end method
+
+.method public abstract initPresenter(Ljava/lang/String;Lcom/tapr/sdk/PlacementCustomParameters;)V
+.end method
+
+.method public abstract loadUrl(Ljava/lang/String;)V
+.end method
+
+.method public abstract setCookie(Ljava/lang/String;Ljava/lang/String;)V
+.end method
+
+.method public abstract showProgressDialog()V
+.end method

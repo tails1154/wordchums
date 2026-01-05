@@ -1,0 +1,73 @@
+.class public final synthetic Lcom/google/android/gms/internal/games/zzcp;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/google/android/gms/common/api/internal/RemoteCall;
+
+
+# instance fields
+.field public final synthetic zza:Ljava/lang/String;
+
+.field public final synthetic zzb:I
+
+.field public final synthetic zzc:Z
+
+
+# direct methods
+.method public synthetic constructor <init>(Ljava/lang/String;IZ)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/gms/internal/games/zzcp;->zza:Ljava/lang/String;
+
+    iput p2, p0, Lcom/google/android/gms/internal/games/zzcp;->zzb:I
+
+    iput-boolean p3, p0, Lcom/google/android/gms/internal/games/zzcp;->zzc:Z
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 6
+
+    .line 1
+    .line 2
+    iget-object v2, p0, Lcom/google/android/gms/internal/games/zzcp;->zza:Ljava/lang/String;
+
+    .line 3
+    .line 4
+    iget v3, p0, Lcom/google/android/gms/internal/games/zzcp;->zzb:I
+
+    .line 5
+    .line 6
+    iget-boolean v5, p0, Lcom/google/android/gms/internal/games/zzcp;->zzc:Z
+
+    .line 7
+    move-object v0, p1
+
+    .line 8
+    .line 9
+    check-cast v0, Lcom/google/android/gms/games/internal/zzbz;
+
+    .line 10
+    move-object v1, p2
+
+    .line 11
+    .line 12
+    check-cast v1, Lcom/google/android/gms/tasks/TaskCompletionSource;
+
+    .line 13
+    const/4 v4, 0x0
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-virtual/range {v0 .. v5}, Lcom/google/android/gms/games/internal/zzbz;->zzaD(Lcom/google/android/gms/tasks/TaskCompletionSource;Ljava/lang/String;IZZ)V
+
+    .line 17
+    return-void
+.end method

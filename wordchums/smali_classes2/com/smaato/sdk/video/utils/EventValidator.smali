@@ -1,0 +1,131 @@
+.class public final Lcom/smaato/sdk/video/utils/EventValidator;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/smaato/sdk/video/utils/EventValidator$Builder;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<Event:",
+        "Ljava/lang/Object;",
+        "State:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final validStatesForEvent:Ljava/util/Map;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "TEvent;",
+            "Ljava/util/List<",
+            "+TState;>;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method private constructor <init>(Ljava/util/Map;)V
+    .locals 0
+    .param p1    # Ljava/util/Map;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Map<",
+            "TEvent;",
+            "Ljava/util/List<",
+            "+TState;>;>;)V"
+        }
+    .end annotation
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    iput-object p1, p0, Lcom/smaato/sdk/video/utils/EventValidator;->validStatesForEvent:Ljava/util/Map;
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Ljava/util/Map;Lcom/smaato/sdk/video/utils/EventValidator$1;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/smaato/sdk/video/utils/EventValidator;-><init>(Ljava/util/Map;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public isValid(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TEvent;TState;)Z"
+        }
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/smaato/sdk/video/utils/EventValidator;->validStatesForEvent:Ljava/util/Map;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 6
+    move-result-object p1
+
+    .line 7
+    .line 8
+    check-cast p1, Ljava/util/List;
+
+    .line 9
+    .line 10
+    if-nez p1, :cond_0
+
+    .line 11
+    const/4 p1, 0x0
+
+    .line 12
+    return p1
+
+    .line 13
+    .line 14
+    .line 15
+    :cond_0
+    invoke-interface {p1, p2}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+
+    .line 16
+    move-result p1
+
+    .line 17
+    return p1
+.end method

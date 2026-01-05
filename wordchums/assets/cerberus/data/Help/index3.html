@@ -1,0 +1,250 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=301">
+<style type="text/css">
+body,html {margin:0;padding:0;height:100%;}
+body,div,p,td {font-family:Helvetica, Arial, sans-serif;}
+div.clear {clear:both;}
+
+#rules {position:relative;width:602px;min-height:900px;background:#56a;padding:20px 0 80px;}
+#rules #menu {text-align:center;}
+#rules #menu button {width:380px;font-size:36px;text-align:center;margin:6px 0;padding:10px 10px;
+   background-color:#fff;
+   background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ccc));
+   background-image:-webkit-linear-gradient(top, #fff, #ccc);
+   background-image:   -moz-linear-gradient(top, #fff, #ccc);
+   background-image:    -ms-linear-gradient(top, #fff, #ccc);
+   background-image:     -o-linear-gradient(top, #fff, #ccc);
+	border:4px solid #888;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	border-radius:20px;
+	-webkit-box-shadow:2px 2px 4px #222;
+	-moz-box-shadow:2px 2px 4px #222;
+	box-shadow:2px 2px 4px #222;}
+
+#rules div.rulesection p.backtotop {margin:50px 0 30px;}
+#rules div.rulesection p.backtotop a {font-size:28px;text-align:center;margin-left:58px;padding:11px 114px;
+   background-color:#fff;
+   background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ccc));
+   background-image:-webkit-linear-gradient(top, #fff, #ccc);
+   background-image:   -moz-linear-gradient(top, #fff, #ccc);
+   background-image:    -ms-linear-gradient(top, #fff, #ccc);
+   background-image:     -o-linear-gradient(top, #fff, #ccc);
+	border:2px solid #222;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	border-radius:20px;
+	-webkit-box-shadow:2px 2px 4px #222;
+	-moz-box-shadow:2px 2px 4px #222;
+	box-shadow:2px 2px 4px #222;
+	text-decoration:none;
+	color:#000;
+}
+
+#rules div.rulesection {width:500px;margin:20px auto;padding:20px;
+   background-color:#fff;
+	border:4px solid #fff;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	border-radius:20px;
+	-webkit-box-shadow:2px 2px 4px #222;
+	-moz-box-shadow:2px 2px 4px #222;
+	box-shadow:2px 2px 4px #222;}
+
+#rules h1 {
+	font-size:48px;text-align:center;margin:6px auto 10px;padding:10px 10px;
+	background-color:#89f;color:#fff;
+	border:4px solid #89f;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	border-radius:20px;}
+#rules h2 {font-weight:bold;font-size:24px;text-align:left;padding:0;margin:40px 15px 10px;}
+#rules h3 {font-weight:bold;font-size:24px;text-align:left;padding:0;margin:10px 15px 10px;}
+#rules p {font-size:24px;margin:0 15px 35px;}
+#rules div.ims {margin:0 15px 0;}
+#rules div.center {text-align:center;}
+#rules div.left,#rules img.left {float:left;}
+#rules div.right,#rules img.right {float:right;}
+
+#rules table {margin:20px auto;
+	background-color:#56a;
+	border:2px solid #459;
+	-webkit-box-shadow:2px 2px 4px #222;
+	-moz-box-shadow:2px 2px 4px #222;
+	box-shadow:2px 2px 4px #222;}
+#rules td,th {font-size:24px;padding:7px 10px;}
+#rules th {color:#fff;}
+#rules td {background-color:#fff;border-top:2px solid #bbb;border-left:2px solid #bbb;text-align:right;}
+#rules td:first-child {border-left:0;text-align:left;}
+#rules tr.first td {border-top:0;}
+#rules td.line {border-top:2px solid #444;}
+#rules th.left {text-align:left;}
+#rules th.right {text-align:right;}
+
+#rules div.padbottom,#rules p.padbottom,#rules h1.padbottom {margin-bottom:40px;}
+
+</style>
+<script type="text/javascript">
+function show(id) {
+ var div = document.getElementById(id);
+ if (div.style.display == "none") {
+  hideall();
+  div.style.display = "block";
+ }
+ window.scroll(0,getObjectY(document.getElementById('scrolltop')));
+}
+function hideall() {
+ var hints = 6;
+ for (var i = 1;i <= hints;i++) {
+  document.getElementById("rulesection"+i).style.display = "none";
+ }
+}
+function getObjectY(obj) {
+	var curtop = 0;
+	if (obj.offsetParent) {
+		do {
+			curtop += obj.offsetTop;
+		} while (obj = obj.offsetParent);
+	return [curtop];
+	}
+}
+</script>
+</head>
+<body>
+<a name="top"></a>
+ <div id="rules">
+  <div id="menu">
+   <button onclick="show('rulesection1')">How to Play</button>
+   <button onclick="show('rulesection2')">Scoring and Winning</button>
+   <button onclick="show('rulesection3')">Experience (XP)</button>
+   <button onclick="show('rulesection4')">Starting Games</button>
+   <button onclick="show('rulesection5')">Store</button>
+   <button onclick="show('rulesection6')">More</button>
+  </div>
+  <div><a id="scrolltop" name="scrolltop"></a></div>
+  <div class="rulesection" id="rulesection1">
+   <h1 class="padbottom">How to Play</h1>
+   <p>The first word in a game must cross the center star square. After that any word formed must have at least one letter adjacent to a letter played in a prior turn. All newly placed letters must be adjacent to another letter and on the same vertical or horizontal row. Every tile placed must form valid words vertically and horizontally if it is adjacent to more than one letter already on the board.</p>
+   <h2>Word score <img src="ims/rules/score.png" height="49" alt=""></h2>
+   <p>The word point badge shows it’s a valid word. If the badge turns green then it's at least 50% of the best word that can be played. For example: if the best possible score on your turn is 60…the badge will turn green for any score over 30. <strong>A green badge shows you’ve found a word in the top half of the possible scores.</strong></p>
+   <h2>Word Power Stars <img src="ims/rules/pointstars2.png" height="49" alt=""></h2>
+   <p>All valid words are at least one star.  You will see two stars when the current word's points are 25% or more of the best word's score.  Three stars shows that the word on the board is at least 50% of the best possible score that turn.</strong></p>
+   <div class="ims"><img src="ims/rules/premiumstars4.png" width="" alt=""><img src="ims/rules/premiumstars5.png" height=“49” alt="" class="right"></div>
+   <h3>Premium Stars and Best Word</h3>
+   <p>Premium stars may be purchased in the Shop under the Boosts tab.  The 4th star shows your word is at least 75% of the best score.  It will signal Best Word when you find the best points.</strong></p>
+   <h2>Turn Options</h2>
+   <div class="ims left"><img src="ims/rules/image11.png" width="" alt=""></div>
+   <p>HINT shows you a square that can be used to make a good word. The word will cross the hint square in the direction of the arrows. The hint will get better as you find words. You may only use 1 hint per turn.</p>
+   <div class="ims left"><img src="ims/rules/image12.png" width="" alt=""></div>
+   <p>BOMB draws 7 new letter tiles. Use BOMB when the points are low and the badge is already green or you just don’t like your letters. The bomb gets you a new set of letter tiles that might let you make bigger points. It’s often great to use when you have all consonants or all vowels. You may only use 1 bomb per turn.</p>
+   <div class="ims left"><img src="ims/rules/image13.png" width="" alt=""></div>
+   <p>Tap PLAY when you’re happy with your word. Play sends your word to your opponent and you wait for them to take their turn.</p>
+   <div class="ims left"><img src="ims/rules/image14.png" width="" alt=""></div>
+   <p>PASS is used to skip your turn. It’s typically used at the end of the game when you can’t find anywhere to play a letter. <strong>Three consecutive passes ends a game.</strong> For example: You pass, opponent passes, You pass..then game over.</p>
+   <div class="ims left"><img src="ims/rules/image15.png" width="" alt=""></div>
+   <p>The game menu has the following options:<br>
+<strong>Swap and Pass</strong> - This rarely used option allows you to pick letters from your rack that you can trade for new letters. After you swap it is your opponent’s turn.<br>
+<strong>Resign</strong> - Ends the game and counts it as a loss.</p>
+   <div class="clear"></div>
+   <p class="backtotop"><a href="#top">Back to Top</a></p>
+  </div>
+  <div class="rulesection" id="rulesection2" style="display:none;">
+   <h1>Scoring and Winning</h1>
+   <h2>Scoring</h2>
+   <p>Every letter has a point value in the lower left corner. Blank letters are worth 0 points. Score is calculated by first applying any letter multipliers to letters placed on a letter multiplier square. (L2,L3,L4) The letter multiplier only applies the first time a letter is placed on the square. A 6 point letter is worth 18 if it’s on an L3 square. The points are then added up for each word formed. If a newly placed letter covers a word multiplier (W2,W3) then the points for that word are multiplied by the word multiplier. When letters cover multiple word multiplier squares they are all applied. For example a W2 and W3 would multiply the points by 2 first and then by 3 to end up with a 6X multiplier. Playing letters adjacent to a current word on the board can create numerous words in one play. Letters are counted twice if they form words both vertically and horizontally.</p>
+   <h2>Multiplier Squares</h2>
+   <table cellspacing="0">
+    <tr class="first">
+     <td><img src="ims/rules/image16.png" width="" alt=""></td><td>Letter X 2</td><td><img src="ims/rules/image17.png" width="" alt=""></td><td>Word x 2</td>
+    </tr>
+    <tr>
+     <td><img src="ims/rules/image18.png" width="" alt=""></td><td>Letter X 3</td><td><img src="ims/rules/image19.png" width="" alt=""></td><td>Word x 3</td>
+    </tr>
+    <tr>
+     <td><img src="ims/rules/image20.png" width="" alt=""></td><td>Letter X 4</td><td>&nbsp;</td><td>&nbsp;</td>
+    </tr>
+   </table>
+   <h2>Bingos</h2>
+   <p class="padbottom">You earn a point bonus when you play 5 or more letters in a turn.<br>
+Play 5 letters +10 points<br>
+Play 6 letters +20 points<br>
+Play 7 letters +40 points</p>
+   <h1>Winning</h1>
+   <h2>Single Player</h2>
+   <p>The game ends when one player plays all their letters and there are no letters left to draw or when players pass for 3 consecutive turns. The player who plays all of their letters receives all the points left in their opponent’s letters and those same points are subtracted from the opponents score. This effectively gives the player making the last play double the points left in their opponent’s hand.</p>
+   <p>If the score is tied after the letter adjustment then the player that used all of their letters receives one tie-breaker point.</p>
+   <h2>Multiplayer</h2>
+   <p>First player to play all letters when none are left to draw receives the points of letters in all of the other players' racks. Each opponent loses the points left in their rack.</p>
+   <h2>Team Game</h2>
+   <p>The team with the first player to play all letters receives the points for any letters left in the 2 opponents racks. The remaining points in the winning teammates hand are not counted.</p>
+   <p class="backtotop"><a href="#top">Back to Top</a></p>
+  </div>
+  <div class="rulesection" id="rulesection3" style="display:none;">
+   <h1>Experience (XP)</h1>
+   <h2>What’s XP?</h2>
+   <p>You start out earning 1 XP (experience point) for every point in your word. The level bar at bottom of screen shows you how many points you need to get to the next level.</p>
+   <h2>Gear gives Bonus XP</h2>
+   <p>Hats and Hats and holds increase XP by the bonus percentage listed on that item. For example…if you are wearing a hat with XP +15% and a hold with XP + 9% then you add those together and receive 25% more experience for every word. Note: You get the XP bonus only for the gear you are wearing.</p>
+   <h2>Energy Boost</h2>
+   <p>Energy doubles your XP points for every word. It also doubles the gear. Combining gear and boost will soon more than triple the XP you earn each turn!</p>
+   <table cellspacing="0">
+    <tr>
+     <th class="left">Item</th><th>Boost</th><th class="right">XP</th>
+    </tr>
+    <tr class="first">
+     <td>40 Points for word</td><td>&nbsp;</td><td>40</td>
+    </tr>
+    <tr>
+     <td>Shopping Bag</td><td>+15%</td><td>6</td>
+    </tr>
+    <tr>
+     <td>Straw Hat</td><td>+50%</td><td>20</td>
+    </tr>
+    <tr>
+     <td>XP after gear bonus</td><td>&nbsp;</td><td class="line">66</td>
+    </tr>
+    <tr>
+     <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+    </tr>
+    <tr>
+     <td class="total">Total XP earned</td><td>&nbsp;</td><td class="total line">132</td>
+    </tr>
+   </table>
+   <p class="backtotop"><a href="#top">Back to Top</a></p>
+  </div>
+  <div class="rulesection" id="rulesection4" style="display:none;">
+   <h1>Starting Games</h1>
+   <h2>More ways to start games</h2>
+   <div class="ims left"><img src="ims/rules/image21.png" width="" alt=""></div>
+   <p>Quickly start a new game with anyone on your leaderboards by tapping the plus button to the right of their name. Start multiple types of games using the new game button on the main screen.</p>
+   <h2>Select 1 on 1, 3-4 Players or Teams to start different types of games.</h2>
+   <div class="ims left padbottom"><img src="ims/rules/image22.png" height="66" alt="" style="margin-right:20px;"><img src="ims/rules/image23.png" height="66" alt=""></div>
+   <p class="backtotop"><a href="#top">Back to Top</a></p>
+  </div>
+  <div class="rulesection" id="rulesection5" style="display:none;">
+   <h1>Store</h1>
+   <h2>Gear</h2>
+   <p>Chums can wear two pieces of gear at any time. You can purchase hats and things for your chum to hold. New gear is available as you level up. In the store you can try on all gear. (Even if it requires a higher level) Just tap on any items picture to see it on your chum. Gear looks cool and boosts the rate at which you earn experience (XP). Take a look at the Experience section of help for more details.</p>
+   <h2>Boosts</h2>
+   <p>Energy doubles the rate at which you earn experience. You can buy as much boost as you want and it will add to your boosted time.</p>
+   <p>You can also stock up on Hints and Bombs.</p>
+   <h2>Chums</h2>
+   <p>You can always buy more Chums or different colors of Chums. When you buy a new Chum the old Chum/color combination will still be in your inventory and you can always switch back to it.</p>
+   <p class="backtotop"><a href="#top">Back to Top</a></p>
+  </div>
+  <div class="rulesection" id="rulesection6" style="display:none;">
+   <h1>More</h1>
+   <h2>Dictionary</h2>
+   <p>Tap on any word played in a previous turn to look up a definition from Wordnik.com.   If multiple words cross the square then the definitions for both words will display on separate tabs.  Word Chums uses the ENABLE2k word list for word validation.  It is an expansive list and contains some words which are not yet defined in Wordnik.</p>
+   <h2>Remove or Block Players</h2>
+   <p>Players are added to your Friend List whenever you start a game with them or accept a game that they started.  Random players are added to your Friend List only if you rematch with them.   You cannot “Remove” a player while you have active games with them.</p> 
+   <p>The “Block” and “Remove” buttons are located at the bottom of the other player’s stats screen.  Tap on the players name in your Friend List (Your friends are shown in the leaderboard on the main screen) and swipe up on the stats screen.  You may also tap on the other players chum while in a game and scroll down on the stats screen to see the “Block” button.</p>
+   <p>A deleted player can rejoin your Friends leaderboard if you accept another game from them but a blocked player cannot start games with you or send chat messages. </p>
+   <p class="backtotop"><a href="#top">Back to Top</a></p>
+  </div>
+ </div>
+</body>
+</html>

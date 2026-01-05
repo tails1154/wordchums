@@ -1,0 +1,34 @@
+.class public final Lnet/pubnative/lite/sdk/api/RequestManager$AdFormat;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lnet/pubnative/lite/sdk/api/RequestManager;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "AdFormat"
+.end annotation
+
+
+# static fields
+.field public static final HTML:Ljava/lang/String; = "html"
+
+.field public static final VIDEO:Ljava/lang/String; = "video"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    return-void
+.end method

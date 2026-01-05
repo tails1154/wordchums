@@ -1,0 +1,56 @@
+.class public final Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/render/linear/d$b;
+.super Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/render/linear/d;
+.source "SourceFile"
+
+
+# annotations
+.annotation build Landroidx/compose/runtime/internal/StabilityInferred;
+    parameters = 0x0
+.end annotation
+
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/render/linear/d;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "b"
+.end annotation
+
+
+# static fields
+.field public static final b:Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/render/linear/d$b;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public static final c:I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/render/linear/d$b;
+
+    invoke-direct {v0}, Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/render/linear/d$b;-><init>()V
+
+    sput-object v0, Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/render/linear/d$b;->b:Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/render/linear/d$b;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-direct {p0, v0}, Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/render/linear/d;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 5
+    return-void
+.end method

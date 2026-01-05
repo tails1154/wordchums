@@ -1,0 +1,141 @@
+.class public Lcom/smaato/sdk/video/vast/model/Ad;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/smaato/sdk/video/vast/model/Ad$Builder;
+    }
+.end annotation
+
+
+# static fields
+.field public static final AD_TYPE:Ljava/lang/String; = "adType"
+
+.field public static final CONDITIONAL_AD:Ljava/lang/String; = "conditionalAd"
+
+.field public static final ID:Ljava/lang/String; = "id"
+
+.field public static final INLINE:Ljava/lang/String; = "InLine"
+
+.field public static final NAME:Ljava/lang/String; = "Ad"
+
+.field public static final SEQUENCE:Ljava/lang/String; = "sequence"
+
+.field public static final WRAPPER:Ljava/lang/String; = "Wrapper"
+
+
+# instance fields
+.field public final adType:Lcom/smaato/sdk/video/vast/model/VideoAdType;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final conditionalAd:Ljava/lang/Boolean;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
+
+.field public final id:Ljava/lang/String;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
+
+.field public final inLine:Lcom/smaato/sdk/video/vast/model/InLine;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
+
+.field public final sequence:Ljava/lang/Integer;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
+
+.field public final wrapper:Lcom/smaato/sdk/video/vast/model/Wrapper;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
+
+
+# direct methods
+.method constructor <init>(Ljava/lang/String;Lcom/smaato/sdk/video/vast/model/InLine;Lcom/smaato/sdk/video/vast/model/Wrapper;Ljava/lang/Integer;Ljava/lang/Boolean;Lcom/smaato/sdk/video/vast/model/VideoAdType;)V
+    .locals 0
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p2    # Lcom/smaato/sdk/video/vast/model/InLine;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p3    # Lcom/smaato/sdk/video/vast/model/Wrapper;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p4    # Ljava/lang/Integer;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p5    # Ljava/lang/Boolean;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p6    # Lcom/smaato/sdk/video/vast/model/VideoAdType;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    iput-object p2, p0, Lcom/smaato/sdk/video/vast/model/Ad;->inLine:Lcom/smaato/sdk/video/vast/model/InLine;
+
+    .line 6
+    .line 7
+    iput-object p3, p0, Lcom/smaato/sdk/video/vast/model/Ad;->wrapper:Lcom/smaato/sdk/video/vast/model/Wrapper;
+
+    .line 8
+    .line 9
+    iput-object p1, p0, Lcom/smaato/sdk/video/vast/model/Ad;->id:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    iput-object p4, p0, Lcom/smaato/sdk/video/vast/model/Ad;->sequence:Ljava/lang/Integer;
+
+    .line 12
+    .line 13
+    iput-object p5, p0, Lcom/smaato/sdk/video/vast/model/Ad;->conditionalAd:Ljava/lang/Boolean;
+
+    .line 14
+    .line 15
+    iput-object p6, p0, Lcom/smaato/sdk/video/vast/model/Ad;->adType:Lcom/smaato/sdk/video/vast/model/VideoAdType;
+
+    .line 16
+    return-void
+.end method
+
+
+# virtual methods
+.method public newBuilder()Lcom/smaato/sdk/video/vast/model/Ad$Builder;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    new-instance v0, Lcom/smaato/sdk/video/vast/model/Ad$Builder;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-direct {v0, p0}, Lcom/smaato/sdk/video/vast/model/Ad$Builder;-><init>(Lcom/smaato/sdk/video/vast/model/Ad;)V
+
+    .line 6
+    return-object v0
+.end method

@@ -1,0 +1,60 @@
+.class public final Lcoil/compose/singleton/R$string;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcoil/compose/singleton/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "string"
+.end annotation
+
+
+# static fields
+.field public static final close_drawer:I = 0x7f120079
+
+.field public static final close_sheet:I = 0x7f12007a
+
+.field public static final default_error_message:I = 0x7f1200ae
+
+.field public static final default_popup_window_title:I = 0x7f1200b0
+
+.field public static final dropdown_menu:I = 0x7f1200b3
+
+.field public static final in_progress:I = 0x7f12011a
+
+.field public static final indeterminate:I = 0x7f12011b
+
+.field public static final navigation_menu:I = 0x7f120148
+
+.field public static final not_selected:I = 0x7f12014a
+
+.field public static final off:I = 0x7f12014f
+
+.field public static final on:I = 0x7f120159
+
+.field public static final range_end:I = 0x7f120169
+
+.field public static final range_start:I = 0x7f12016a
+
+.field public static final selected:I = 0x7f120174
+
+.field public static final status_bar_notification_info_overflow:I = 0x7f120186
+
+.field public static final tab:I = 0x7f120188
+
+.field public static final template_percent:I = 0x7f12018b
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

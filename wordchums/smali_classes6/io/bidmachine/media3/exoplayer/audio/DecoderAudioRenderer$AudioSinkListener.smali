@@ -1,0 +1,206 @@
+.class final Lio/bidmachine/media3/exoplayer/audio/DecoderAudioRenderer$AudioSinkListener;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lio/bidmachine/media3/exoplayer/audio/AudioSink$Listener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lio/bidmachine/media3/exoplayer/audio/DecoderAudioRenderer;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x12
+    name = "AudioSinkListener"
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lio/bidmachine/media3/exoplayer/audio/DecoderAudioRenderer;
+
+
+# direct methods
+.method private constructor <init>(Lio/bidmachine/media3/exoplayer/audio/DecoderAudioRenderer;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lio/bidmachine/media3/exoplayer/audio/DecoderAudioRenderer$AudioSinkListener;->this$0:Lio/bidmachine/media3/exoplayer/audio/DecoderAudioRenderer;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lio/bidmachine/media3/exoplayer/audio/DecoderAudioRenderer;Lio/bidmachine/media3/exoplayer/audio/DecoderAudioRenderer$1;)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0, p1}, Lio/bidmachine/media3/exoplayer/audio/DecoderAudioRenderer$AudioSinkListener;-><init>(Lio/bidmachine/media3/exoplayer/audio/DecoderAudioRenderer;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public synthetic onAudioCapabilitiesChanged()V
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Lio/bidmachine/media3/exoplayer/audio/m;->a(Lio/bidmachine/media3/exoplayer/audio/AudioSink$Listener;)V
+
+    return-void
+.end method
+
+.method public onAudioSinkError(Ljava/lang/Exception;)V
+    .locals 2
+
+    .line 1
+    .line 2
+    const-string v0, "DecoderAudioRenderer"
+
+    .line 3
+    .line 4
+    const-string v1, "Audio sink error"
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-static {v0, v1, p1}, Lio/bidmachine/media3/common/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 8
+    .line 9
+    iget-object v0, p0, Lio/bidmachine/media3/exoplayer/audio/DecoderAudioRenderer$AudioSinkListener;->this$0:Lio/bidmachine/media3/exoplayer/audio/DecoderAudioRenderer;
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-static {v0}, Lio/bidmachine/media3/exoplayer/audio/DecoderAudioRenderer;->access$100(Lio/bidmachine/media3/exoplayer/audio/DecoderAudioRenderer;)Lio/bidmachine/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
+
+    .line 13
+    move-result-object v0
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-virtual {v0, p1}, Lio/bidmachine/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;->audioSinkError(Ljava/lang/Exception;)V
+
+    .line 17
+    return-void
+.end method
+
+.method public synthetic onOffloadBufferEmptying()V
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Lio/bidmachine/media3/exoplayer/audio/m;->c(Lio/bidmachine/media3/exoplayer/audio/AudioSink$Listener;)V
+
+    return-void
+.end method
+
+.method public synthetic onOffloadBufferFull()V
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Lio/bidmachine/media3/exoplayer/audio/m;->d(Lio/bidmachine/media3/exoplayer/audio/AudioSink$Listener;)V
+
+    return-void
+.end method
+
+.method public onPositionAdvancing(J)V
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lio/bidmachine/media3/exoplayer/audio/DecoderAudioRenderer$AudioSinkListener;->this$0:Lio/bidmachine/media3/exoplayer/audio/DecoderAudioRenderer;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-static {v0}, Lio/bidmachine/media3/exoplayer/audio/DecoderAudioRenderer;->access$100(Lio/bidmachine/media3/exoplayer/audio/DecoderAudioRenderer;)Lio/bidmachine/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
+
+    .line 6
+    move-result-object v0
+
+    .line 7
+    .line 8
+    .line 9
+    invoke-virtual {v0, p1, p2}, Lio/bidmachine/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;->positionAdvancing(J)V
+
+    .line 10
+    return-void
+.end method
+
+.method public onPositionDiscontinuity()V
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lio/bidmachine/media3/exoplayer/audio/DecoderAudioRenderer$AudioSinkListener;->this$0:Lio/bidmachine/media3/exoplayer/audio/DecoderAudioRenderer;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lio/bidmachine/media3/exoplayer/audio/DecoderAudioRenderer;->onPositionDiscontinuity()V
+
+    .line 6
+    return-void
+.end method
+
+.method public onSkipSilenceEnabledChanged(Z)V
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lio/bidmachine/media3/exoplayer/audio/DecoderAudioRenderer$AudioSinkListener;->this$0:Lio/bidmachine/media3/exoplayer/audio/DecoderAudioRenderer;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-static {v0}, Lio/bidmachine/media3/exoplayer/audio/DecoderAudioRenderer;->access$100(Lio/bidmachine/media3/exoplayer/audio/DecoderAudioRenderer;)Lio/bidmachine/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
+
+    .line 6
+    move-result-object v0
+
+    .line 7
+    .line 8
+    .line 9
+    invoke-virtual {v0, p1}, Lio/bidmachine/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;->skipSilenceEnabledChanged(Z)V
+
+    .line 10
+    return-void
+.end method
+
+.method public onUnderrun(IJJ)V
+    .locals 7
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lio/bidmachine/media3/exoplayer/audio/DecoderAudioRenderer$AudioSinkListener;->this$0:Lio/bidmachine/media3/exoplayer/audio/DecoderAudioRenderer;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-static {v0}, Lio/bidmachine/media3/exoplayer/audio/DecoderAudioRenderer;->access$100(Lio/bidmachine/media3/exoplayer/audio/DecoderAudioRenderer;)Lio/bidmachine/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
+
+    .line 6
+    move-result-object v1
+
+    .line 7
+    move v2, p1
+
+    .line 8
+    move-wide v3, p2
+
+    .line 9
+    move-wide v5, p4
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-virtual/range {v1 .. v6}, Lio/bidmachine/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;->underrun(IJJ)V
+
+    .line 13
+    return-void
+.end method

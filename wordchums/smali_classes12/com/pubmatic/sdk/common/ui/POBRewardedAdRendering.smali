@@ -1,0 +1,25 @@
+.class public interface abstract Lcom/pubmatic/sdk/common/ui/POBRewardedAdRendering;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract destroy()V
+.end method
+
+.method public abstract renderAd(Lcom/pubmatic/sdk/common/base/POBAdDescriptor;)V
+    .param p1    # Lcom/pubmatic/sdk/common/base/POBAdDescriptor;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+.end method
+
+.method public abstract setAdRendererListener(Lcom/pubmatic/sdk/common/ui/POBRewardedAdRendererListener;)V
+    .param p1    # Lcom/pubmatic/sdk/common/ui/POBRewardedAdRendererListener;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+.end method
+
+.method public abstract show()V
+.end method

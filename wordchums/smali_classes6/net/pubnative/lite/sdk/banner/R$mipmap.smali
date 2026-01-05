@@ -1,0 +1,36 @@
+.class public final Lnet/pubnative/lite/sdk/banner/R$mipmap;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lnet/pubnative/lite/sdk/banner/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "mipmap"
+.end annotation
+
+
+# static fields
+.field public static final close:I = 0x7f0f0000
+
+.field public static final mute:I = 0x7f0f0004
+
+.field public static final replay:I = 0x7f0f0005
+
+.field public static final skip:I = 0x7f0f0006
+
+.field public static final unmute:I = 0x7f0f0007
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

@@ -1,0 +1,29 @@
+{
+   "screenSize": { "w": 640, "h": 960 },
+   "anims":
+   [
+      {
+         "type": "start",
+         "movie": "loading_anim_pt1",
+         "scale": 0.85,
+         "anchor": { "x": -48, "y": -72 },
+         "loop": false,
+         "sound": "ufo_arrive"
+      },
+      {
+         "type": "loop",
+         "movie": "loading_anim_pt2",
+         "scale": 0.85,
+         "anchor": { "x": -48, "y": -72 },
+         "loop": true
+      },
+      {
+         "type": "end",
+         "movie": "loading_anim_pt3",
+         "scale": 0.85,
+         "anchor": { "x": -48, "y": -72 },
+         "loop": false,
+         "sound": "ufo_depart"
+      }
+   ]
+}

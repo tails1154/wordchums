@@ -1,0 +1,101 @@
+.class public Lcom/smaato/sdk/core/lgpd/SomaLgpdData;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field private final locationAware:Lcom/smaato/sdk/core/locationaware/LocationAware;
+
+
+# direct methods
+.method constructor <init>(Lcom/smaato/sdk/core/locationaware/LocationAware;)V
+    .locals 0
+    .param p1    # Lcom/smaato/sdk/core/locationaware/LocationAware;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    iput-object p1, p0, Lcom/smaato/sdk/core/lgpd/SomaLgpdData;->locationAware:Lcom/smaato/sdk/core/locationaware/LocationAware;
+
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public isLgpdConsentEnabled()Ljava/lang/Boolean;
+    .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-static {}, Lcom/smaato/sdk/core/SmaatoSdk;->isLGPDConsentEnabled()Ljava/lang/Boolean;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public isLgpdEnabled()Z
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/smaato/sdk/core/lgpd/SomaLgpdData;->locationAware:Lcom/smaato/sdk/core/locationaware/LocationAware;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-interface {v0}, Lcom/smaato/sdk/core/locationaware/LocationAware;->isConsentCountry()Z
+
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public isUsageAllowedFor()Z
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-static {}, Lcom/smaato/sdk/core/SmaatoSdk;->isLGPDConsentEnabled()Ljava/lang/Boolean;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    .line 9
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 10
+    move-result v0
+
+    .line 11
+    return v0
+
+    .line 12
+    :cond_0
+    const/4 v0, 0x1
+
+    .line 13
+    return v0
+.end method

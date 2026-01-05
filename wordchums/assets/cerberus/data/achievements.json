@@ -1,0 +1,27 @@
+{
+   "Achievements":
+   [
+      {"id":1, "name":"Starter", "description":"Started 1 on 1 game, team, and 3-4 player games", "type":"started"},
+      {"id":2, "name":"Finisher", "description":"Finished a game", "type":"played", "amount":5},
+      {"id":3, "name":"Winner", "description":"Won a game", "type":"won", "amount":1},
+      {"id":4, "name":"Won 5", "description":"Won 5 games", "type":"won", "amount":5},
+      {"id":5, "name":"Bingo", "description":"Got a 7 tile bingo", "type":"bingo", "amount":7},
+      {"id":6, "name":"50 Point Word", "description":"Played a 50 point word", "type":"word", "amount":50},
+      {"id":7, "name":"100 Point Word", "description":"Played a 100 point word", "type":"word", "amount":100},
+      {"id":8, "name":"150 Point Word", "description":"Played a 150 point word", "type":"word", "amount":150},
+      {"id":9, "name":"Multiplier", "description":"Formed a word using 3xW and 4xL", "type":"multiplier"},
+      {"id":10, "name":"Best Word", "description":"Won the best word weekly contest", "type":"bestword"},
+      {"id":11, "name":"Best Game", "description":"Won the best game weekly contest", "type":"bestgame"},
+      {"id":12, "name":"Inviter", "description":"Invited 5 friends to Word Chums", "type":"invited", "amount":5},
+      {"id":13, "name":"500 Point Game", "description":"Score 500 points in a game", "type":"score", "amount":500},
+      {"id":14, "name":"Won 10", "description":"Won 10 games", "type":"won", "amount":10},
+      {"id":15, "name":"20 Games", "description":"Played 20 games", "type":"played", "amount":20},
+      {"id":16, "name":"Star", "description":"Reached level 6", "type":"level", "amount":6},
+      {"id":17, "name":"Chummy", "description":"Bought a new chum", "type":"chum", "amount":1},
+      {"id":18, "name":"600 Point Game", "description":"Scored 600 points in a game", "type":"score", "amount":600},
+      {"id":19, "name":"700 Point Game", "description":"Scored 700 points in a game", "type":"score", "amount":700},
+      {"id":20, "name":"Word Hero", "description":"Reached level 12", "type":"level", "amount":12},
+      {"id":21, "name":"Wordologist", "description":"Reached level 18", "type":"level", "amount":18},
+      {"id":22, "name":"Chum Allmighty", "description":"Reached level 23", "type":"level", "amount":23}
+   ]
+}

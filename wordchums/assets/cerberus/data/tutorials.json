@@ -1,0 +1,719 @@
+{
+  "t0": {
+    "delay": 3,
+    "labels": [
+      {
+        "text": ""
+      }
+    ],
+    "images": [
+      {
+        "file": "tut_full_chums",
+        "x": 10,
+        "y": 10,
+        "w": 270,
+        "h": 270
+      }
+    ]
+  },
+  "t1": {
+    "delay": 3,
+    "arrows": [
+      {
+        "angle": 0,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": 60,
+    "y": -60,
+    "text": "Tap the NEW GAME button to start your first game!"
+  },
+  "t2": {
+    "delay": 5,
+    "arrows": [
+      {
+        "angle": 270,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": 90,
+    "y": 240,
+    "text": "Your games show up here.  Green means its your turn!"
+  },
+  "t3": {
+    "delay": 30,
+    "arrows": [
+      {
+        "angle": 0,
+        "x": 0,
+        "y": -100
+      }
+    ],
+    "x": 0,
+    "y": -120,
+    "just": 0,
+    "text": "Drag letters to form a word on the board. Your word must use at least one letter already on the board."
+  },
+  "t4": {
+    "delay": 30,
+    "arrows": [
+      {
+        "angle": 270,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": 0,
+    "y": 120,
+    "text": "Drag letters to form a word on the board.  The first word must cross this center square."
+  },
+  "t5": {
+    "delay": 10,
+    "images": [
+      {
+        "file": "bonus_big_tl",
+        "x": 21,
+        "y": 97,
+        "w": 60,
+        "h": 60
+      },
+      {
+        "file": "bonus_big_dl",
+        "x": 144,
+        "y": 97,
+        "w": 60,
+        "h": 60
+      },
+      {
+        "file": "bonus_big_tw",
+        "x": 21,
+        "y": 145,
+        "w": 60,
+        "h": 60
+      },
+      {
+        "file": "bonus_big_dw",
+        "x": 144,
+        "y": 145,
+        "w": 60,
+        "h": 60
+      }
+    ],
+    "labels": [
+      {
+        "x": 10,
+        "y": 10,
+        "w": 280,
+        "style": "hdr21",
+        "text": "Multiply Your Points"
+      },
+      {
+        "x": 10,
+        "y": 40,
+        "w": 280,
+        "text": "Playing across bonus squares is key to getting big points!"
+      },
+      {
+        "x": 89,
+        "y": 112,
+        "w": 50,
+        "just": 0,
+        "style": "txt14",
+        "text": "Triple Letter"
+      },
+      {
+        "x": 212,
+        "y": 112,
+        "w": 50,
+        "just": 0,
+        "style": "txt14",
+        "text": "Double Letter"
+      },
+      {
+        "x": 89,
+        "y": 162,
+        "w": 50,
+        "just": 0,
+        "style": "txt14",
+        "text": "Triple Word"
+      },
+      {
+        "x": 212,
+        "y": 162,
+        "w": 50,
+        "just": 0,
+        "style": "txt14",
+        "text": "Double Word"
+      },
+      {
+        "x": 10,
+        "y": 218,
+        "w": 280,
+        "text": "You earn bonus points for playing 5 or more letters!!"
+      }
+    ]
+  },
+  "t6": {
+    "delay": 10,
+    "arrows": [
+      {
+        "angle": 300,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": 2,
+    "y": 72,
+    "text": "When you find a word you like, tap PLAY to submit your turn."
+  },
+  "t7": {
+    "delay": 30,
+    "arrows": [
+      {
+        "angle": 315,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": 95,
+    "y": 110,
+    "text": "You can tap the BACK button to leave this game"
+  },
+  "t8": {
+    "delay": 1,
+    "arrows": [
+      {
+        "angle": 300,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": 0,
+    "y": 160,
+    "just": 0,
+    "text": "Your points badge turned GREEN. That means you're at least half way to the best word you can play!"
+  },
+  "t9": {
+    "delay": 10,
+    "arrows": [
+      {
+        "angle": 0,
+        "x": 0,
+        "y": 20
+      }
+    ],
+    "x": 0,
+    "y": 0,
+    "text": "Not happy with your letters?  The bomb blows them up and draws seven new letter tiles."
+  },
+  "t10": {
+    "delay": 5,
+    "labels": [
+      {
+        "text": ""
+      }
+    ],
+    "images": [
+      {
+        "file": "tut_full_hint",
+        "x": 10,
+        "y": 10,
+        "w": 270,
+        "h": 270
+      }
+    ]
+  },
+  "t11": {
+    "delay": 1,
+    "arrows": [
+      {
+        "angle": 0,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": 96,
+    "y": 210,
+    "text": "We didn't find any friends playing. Use these to invite some or go back and select 'Matched Opponent'."
+  },
+  "t12": {
+    "delay": 5,
+    "arrows": [
+      {
+        "angle": 315,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": 3,
+    "y": 200,
+    "just": 0,
+    "text": "Invite your Facebook friends to play Word Chums.  To start playing right now, go back and choose 'Matched Opponent'"
+  },
+  "t13": {
+    "delay": 5,
+    "arrows": [
+      {
+        "angle": 315,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": 3,
+    "y": 200,
+    "just": 0,
+    "text": "Invite friends from your Contacts to play Word Chums or to start playing right now, choose 'Matched Opponent'"
+  },
+  "t14": {
+    "delay": 5,
+    "arrows": [
+      {
+        "angle": 180,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": 5,
+    "y": 200,
+    "text": "Tip! Start a game with a friend by tapping '+' in the leader board."
+  },
+  "t15": {
+    "arrows": [
+      {
+        "angle": 145,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": 70,
+    "y": 250,
+    "text": "You earn coins for every tile you play."
+  },
+  "t16": {
+    "delay": 4,
+    "arrows": [
+      {
+        "angle": 290,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "angle": 180,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": -80,
+    "y": 0,
+    "text": "To play right now, start a new game... or two!"
+  },
+  "t17": {
+    "delay": 1,
+    "arrows": [
+      {
+        "angle": 300,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": 0,
+    "y": 120,
+    "text": "Valid words turn green! Press play when you find one you like!"
+  },
+  "t18": {
+    "delay": 2,
+    "arrows": [
+      {
+        "angle": 0,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": 0,
+    "y": 0,
+    "text": "Everyone plays at their own pace. If you want to play faster, just start more games!"
+  },
+  "t19": {
+    "delay": 25,
+    "arrows": [
+      {
+        "angle": 300,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": 0,
+    "y": 0,
+    "text": "Double tap the screen to zoom in and out."
+  },
+  "t20": {
+    "delay": 2,
+    "arrows": [
+      {
+        "angle": 90,
+        "x": 0,
+        "y": -20
+      }
+    ],
+    "x": 0,
+    "y": 0,
+    "text": "You have a message. Tap the bubble to chat."
+  },
+  "t21": {
+    "delay": 2,
+    "arrows": [
+      {
+        "angle": 180,
+        "x": 0,
+        "y": -20
+      }
+    ],
+    "x": 0,
+    "y": 0,
+    "text": "Eyeglasses show your opponent is online and viewing the game."
+  },
+  "t22": {
+    "delay": 2,
+    "arrows": [
+      {
+        "angle": 215,
+        "x": 0,
+        "y": -20
+      }
+    ],
+    "x": 0,
+    "y": 0,
+    "just": 0,
+    "text": "This is how many letters are left in the game.  The game ends when it’s zero and someone plays their last letter."
+  },
+  "t23": {
+    "delay": 0,
+    "arrows": [
+      {
+        "angle": 300,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": 52,
+    "y": 80,
+    "text": "Try swiping your finger on the board to move to another game."
+  },
+  "t24": {
+    "delay": 1,
+    "arrows": [
+      {
+        "angle": 145,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": 0,
+    "y": 180,
+    "just": 1,
+    "text": "Your coin balance."
+  },
+  "t25": {
+    "arrows": [
+      {
+        "angle": 180,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": 52,
+    "y": 90,
+    "just": 0,
+    "text": "Earn experience points, 'XP', for every point in your word. XP increases your level to unlock cool stuff for your chum."
+  },
+  "t26": {
+    "delay": 0,
+    "arrows": [
+      {
+        "angle": 0,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": 0,
+    "y": 120,
+    "just": 0,
+    "text": "The blue Hint Marker shows you WHERE a word crosses that's better than any you've found so far.  The arrows indicate horizontal or vertical."
+  },
+  "t27": {
+    "delay": 0,
+    "arrows": [
+      {
+        "angle": 180,
+        "x": 0,
+        "y": -20
+      }
+    ],
+    "x": 0,
+    "y": -120,
+    "just": 0,
+    "text": "You 'bombed' your letters away for a whole new set AND it's still your turn!"
+  },
+  "t28": {
+    "delay": 5,
+    "arrows": [
+      {
+        "angle": 180,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": 0,
+    "y": 0,
+    "just": 1,
+    "text": "Tap any Chum to see stats, achievements, and more!"
+  },
+  "t29": {
+    "arrows": [
+      {
+        "angle": 145,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": 0,
+    "y": 0,
+    "just": 1,
+    "text": "You're the first player in this game -- make your move now! THEN you'll get matched with an opponent."
+  },
+  "t30": {
+    "delay": 1,
+    "arrows": [
+      {
+        "angle": 0,
+        "x": 0,
+        "y": 20
+      }
+    ],
+    "x": 0,
+    "y": 0,
+    "text": "To know when you have a top-25% word or best word, upgrade to Premium Stars on the Boosts Tab in the Shop!"
+  },
+  "t31": {
+    "delay": 0,
+    "arrows": [
+      {
+        "angle": 0,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": 0,
+    "y": 0,
+    "text": "Place and remove some words first and the hint word will be better than the best word found."
+  },
+  "t32": {
+    "delay": 2,
+    "arrows": [
+      {
+        "angle": 270,
+        "x": 20,
+        "y": 0
+      },
+      {
+        "angle": 180,
+        "x": 0,
+        "y": -20
+      }
+    ],
+    "x": 0,
+    "y": -180,
+    "text": "If your opponent goes out first, points left in your tray are subtracted from your score AND added to theirs!"
+  },
+  "t33": {
+    "delay": 2,
+    "arrows": [
+      {
+        "angle": 180,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": 0,
+    "y": 0,
+    "text": "To change gear, tap your chum, then the Inventory Tab."
+  },
+  "t34": {
+    "delay": 1,
+    "arrows": [
+      {
+        "angle": 180,
+        "x": 0,
+        "y": -20
+      }
+    ],
+    "x": 0,
+    "y": -60,
+    "just": 0,
+    "text": "You can click a tile to pick it up. Then click again to drop it on the board."
+  },
+  "t35": {
+    "delay": 0,
+    "arrows": [
+      {
+        "angle": 180,
+        "x": 0,
+        "y": -20
+      }
+    ],
+    "x": 0,
+    "y": 120,
+    "just": 0,
+    "text": "As a shortcut, double click a tile on the board to return it to your rack."
+  },
+  "t36": {
+    "delay": 0,
+    "arrows": [
+      {
+        "angle": 180,
+        "x": 0,
+        "y": -20
+      }
+    ],
+    "x": 0,
+    "y": -80,
+    "just": 0,
+    "text": "You can also double click a tile in your rack to place it in the next position on the board."
+  },
+  "t37": {
+    "delay": 4,
+    "arrows": [
+      {
+        "angle": 180,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": 60,
+    "y": 180,
+    "just": 1,
+    "text": "You can tap the sign to change your username."
+  },
+  "t38": {
+    "delay": 0,
+    "arrows": [
+      {
+        "angle": 0,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "angle": 0,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": 0,
+    "y": 60,
+    "width": 496,
+    "just": 0,
+    "text": "Now, start some games! We already started one for you with Quacky, a computer opponent."
+  },
+  "t39": {
+    "delay": 1,
+    "arrows": [
+      {
+        "angle": 180,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "angle": 0,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": 0,
+    "y": -240,
+    "width": 496,
+    "just": 0,
+    "text": "Start a game now with someone who has a similar playing style."
+  },
+  "t40": {
+    "delay": 0,
+    "arrows": [
+      {
+        "angle": 0,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "angle": 0,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": 0,
+    "y": 0,
+    "width": 496,
+    "just": 0,
+    "text": "Start a game with Flappy, a computer opponent."
+  },
+  "t41": {
+    "delay": 0,
+    "arrows": [
+      {
+        "angle": 180,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "angle": 0,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": 0,
+    "y": -160,
+    "width": 570,
+    "just": 0,
+    "text": "Quick games have a smaller board, fewer tiles, and you have ONE DAY to take each turn!"
+  },
+    "t42": {
+    "delay": 2,
+    "arrows": [
+      {
+        "angle": 0,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "angle": 0,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": 0,
+    "y": -200,
+    "width": 496,
+    "just": 0,
+    "text": "Share the word you just played with all your friends!"
+  },
+      "t43": {
+    "delay": 1,
+    "arrows": [
+      {
+        "angle": 0,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "angle": 0,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "x": 0,
+    "y": -200,
+    "width": 496,
+    "just": 0,
+    "text": "Share your new look with all your friends!"
+  }
+}

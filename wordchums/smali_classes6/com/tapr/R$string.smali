@@ -1,0 +1,134 @@
+.class public final Lcom/tapr/R$string;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/tapr/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "string"
+.end annotation
+
+
+# static fields
+.field public static final abandon_alert_title:I = 0x7f120001
+
+.field public static final abandon_message:I = 0x7f120002
+
+.field public static final abandon_url_not_found:I = 0x7f120003
+
+.field public static final abdandon:I = 0x7f12001f
+
+.field public static final actionbar_title:I = 0x7f120020
+
+.field public static final androidx_startup:I = 0x7f120022
+
+.field public static final app_name:I = 0x7f120024
+
+.field public static final cancel:I = 0x7f120074
+
+.field public static final close:I = 0x7f120077
+
+.field public static final common_google_play_services_enable_button:I = 0x7f120095
+
+.field public static final common_google_play_services_enable_text:I = 0x7f120096
+
+.field public static final common_google_play_services_enable_title:I = 0x7f120097
+
+.field public static final common_google_play_services_install_button:I = 0x7f120098
+
+.field public static final common_google_play_services_install_text:I = 0x7f120099
+
+.field public static final common_google_play_services_install_title:I = 0x7f12009a
+
+.field public static final common_google_play_services_notification_channel_name:I = 0x7f12009b
+
+.field public static final common_google_play_services_notification_ticker:I = 0x7f12009c
+
+.field public static final common_google_play_services_unknown_issue:I = 0x7f12009d
+
+.field public static final common_google_play_services_unsupported_text:I = 0x7f12009e
+
+.field public static final common_google_play_services_update_button:I = 0x7f12009f
+
+.field public static final common_google_play_services_update_text:I = 0x7f1200a0
+
+.field public static final common_google_play_services_update_title:I = 0x7f1200a1
+
+.field public static final common_google_play_services_updating_text:I = 0x7f1200a2
+
+.field public static final common_google_play_services_wear_update_text:I = 0x7f1200a3
+
+.field public static final common_open_on_phone:I = 0x7f1200a4
+
+.field public static final common_signin_button_text:I = 0x7f1200a5
+
+.field public static final common_signin_button_text_long:I = 0x7f1200a6
+
+.field public static final continue_text:I = 0x7f1200a8
+
+.field public static final copy_toast_msg:I = 0x7f1200aa
+
+.field public static final default_mesaage_offer_entry:I = 0x7f1200af
+
+.field public static final fallback_menu_item_copy_link:I = 0x7f1200ff
+
+.field public static final fallback_menu_item_open_in_browser:I = 0x7f120100
+
+.field public static final fallback_menu_item_share_link:I = 0x7f120101
+
+.field public static final loading_tapresearch_event:I = 0x7f12011f
+
+.field public static final message_no_offer:I = 0x7f120140
+
+.field public static final offline_notification_title:I = 0x7f120152
+
+.field public static final offline_opt_in_confirm:I = 0x7f120154
+
+.field public static final offline_opt_in_decline:I = 0x7f120155
+
+.field public static final offline_opt_in_message:I = 0x7f120156
+
+.field public static final offline_opt_in_title:I = 0x7f120157
+
+.field public static final ok_caps:I = 0x7f120158
+
+.field public static final orientation_landscape:I = 0x7f12015e
+
+.field public static final orientation_portrait:I = 0x7f12015f
+
+.field public static final reload:I = 0x7f12016b
+
+.field public static final s1:I = 0x7f12016c
+
+.field public static final s2:I = 0x7f12016d
+
+.field public static final s3:I = 0x7f12016e
+
+.field public static final s4:I = 0x7f12016f
+
+.field public static final s5:I = 0x7f120170
+
+.field public static final s6:I = 0x7f120171
+
+.field public static final s7:I = 0x7f120172
+
+.field public static final status_bar_notification_info_overflow:I = 0x7f120186
+
+.field public static final test:I = 0x7f12018d
+
+.field public static final unknown:I = 0x7f120209
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

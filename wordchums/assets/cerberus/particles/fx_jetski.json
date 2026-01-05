@@ -1,0 +1,1 @@
+{"emitters":[{"a":1.0,"escale":0.0,"forces":[{"type":"constant","x":0.0,"y":500.0}],"g":138,"image":"art/part_water","life":1.4611177444458008,"life_r":0.5,"pv":308.52557373046875,"pv_r":30.0,"pva":-75.0,"pva_r":10.0,"r":76,"rate":4.6040430068969727,"spwn_xs":7.0,"spwn_ys":7.0,"sscale":2.4757075309753418,"sscale_r":3.0439951419830322}],"maxParticles":6}

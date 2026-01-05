@@ -1,0 +1,114 @@
+[
+	{
+		"text":
+		[ 
+			"Need help? Want to learn",
+			"more about the game?",
+			"",
+			"Just tap the menu or",
+			"settings button."
+		],
+		"image": "tip_help",
+		"imageWidth": 190,
+		"imageHeight": 70
+	},
+	{
+		"text":
+		[
+			"Get bonus points for more letters!",
+			"",
+			"Play 5 letters for +10",
+			"Play 6 letters for +20",
+			"Play 7 letters for +40"
+		],
+		"image": "tip_bingo",
+		"imageWidth": 460,
+		"imageHeight": 70
+	},
+	{
+		"text":
+		[
+			"Multiply your points!",
+			"",
+			"Playing across bonus squares",
+			"is key to scoring big points"
+		],
+		"image": "tip_multipliers",
+		"imageWidth": 400,
+		"imageHeight": 160
+	},
+	{
+		"text":
+		[
+			"Find a good word before",
+			"using a hint to improve",
+			"the points of your hint.",
+			"",
+			"The better the word you find,",
+			"the better the hint!"
+		],
+		"image": "tip_hint",
+		"imageWidth": 204,
+		"imageHeight": 148
+	},
+	{
+		"text":
+		[
+			"Swipe the gameboard to move to", 
+			"your next turn without having",
+			"to leave the game"
+		],
+		"image": "tip_swipe",
+		"imageWidth": 428,
+		"imageHeight": 222,
+		"platformIgnore": "html5"
+	},
+	{
+		"text":
+		[
+			"You earn experience points (XP)",
+			"for every point in your word.",
+			"",
+			"XP increases your level to unlock",
+			"cool stuff for your chum."
+		],
+		"image": "tip_xp",
+		"imageWidth": 467,
+		"imageHeight": 222
+	},
+	{
+		"text":
+		[
+			"You earn one coin for each letter",
+			"you play. Use coins in the",
+			"Chum Market."
+		],
+		"image": "tip_coins",
+		"imageWidth": 400,
+		"imageHeight": 180
+	},
+	{
+		"text":
+		[
+			"Earn extra coins by",
+			"inviting friends" 
+		],
+		"image": "tip_invite",
+		"imageWidth": 400,
+		"imageHeight": 140
+	},
+	{
+		"text":
+		[
+			"To know when you",
+			"have a top-25% word",
+			"or best word,",
+			"upgrade to Premium",
+			"Stars on the boost",
+			"tab in the Shop!"
+		],
+		"image": "premiumstars5",
+		"imageWidth": 232,
+		"imageHeight": 52
+	}
+]

@@ -1,0 +1,13 @@
+{
+   "screenSize": { "w": 1536, "h": 2048 },
+   "anims":
+   [
+      {
+         "type": "default",
+         "movie": "chat_button01_ipad",
+         "scale": 1.0,
+         "anchor": { "x":671, "y":1715 },
+         "loop": true
+      }
+   ]
+}

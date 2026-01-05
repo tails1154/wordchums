@@ -1,0 +1,15 @@
+[{"owner":"GameApp", "action":"SetTipIndex", "index":8},
+ 
+ {"owner":"MainScene", "action":"ShowTip"},
+ {"owner":"Commands", "action":"Wait", "seconds":2.0},
+ {"owner":"TipDialog", "action":"Close"},
+ {"owner":"Commands", "action":"Wait", "seconds":1.0},
+ 
+ 
+ {"owner":"MainScene", "action":"ShowTip"},
+ {"owner":"Commands", "action":"Wait", "seconds":2.0},
+ {"owner":"TipDialog", "action":"Close"},
+ {"owner":"Commands", "action":"Wait", "seconds":1.0}
+ 
+ 
+]

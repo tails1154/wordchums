@@ -1,0 +1,38 @@
+.class public final synthetic Lcom/mobilefuse/sdk/vast/e;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
+
+
+# instance fields
+.field public final synthetic b:Lcom/mobilefuse/sdk/vast/VastAdRenderer;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/mobilefuse/sdk/vast/VastAdRenderer;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/mobilefuse/sdk/vast/e;->b:Lcom/mobilefuse/sdk/vast/VastAdRenderer;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/mobilefuse/sdk/vast/e;->b:Lcom/mobilefuse/sdk/vast/VastAdRenderer;
+
+    invoke-static {v0}, Lcom/mobilefuse/sdk/vast/VastAdRenderer;->a(Lcom/mobilefuse/sdk/vast/VastAdRenderer;)Lkotlin/Unit;
+
+    move-result-object v0
+
+    return-object v0
+.end method

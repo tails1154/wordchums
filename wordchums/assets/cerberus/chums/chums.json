@@ -1,0 +1,16 @@
+{"Chums":
+   [
+      {"ID":2, "Name":"CINDER", "animation":"sinder", "Bio":"CINDER AIN'T THE BEST SPORT AROUND.  BUT HIS TEMPER TANTRUMS ARE AWFUL CUTE.","Pic":"sinder_portrait"}
+    , {"ID":14, "Name":"ANGEL", "animation":"angel", "Bio":"JUST SAYING BEING NICE ALL THE TIME IS A LITTLE OVERRATED","Pic":"angel_portrait"}
+    , {"ID":4, "Name":"MARSHAL", "animation":"alien", "Bio":"WHERE I COME FROM HAVING BI-PEEPERS IS THE CREEPERS","Pic":"alien01"}
+    , {"ID":7, "Name":"ROGER", "animation":"ogre", "Bio":"NO I WON'T TRIM MY EYEBROW. AND I DON'T LIVE UNDER A BRIDGE -- THAT'S A TROLL!","Pic":"ogre01"}
+    , {"ID":9, "Name":"ZOMBIE", "animation":"zombie", "Bio":"AHHH MY ARM MY ARM.  OH WAIT. AHHHH MY HEAD MY HEAD","Pic":"zombie01"}
+    , {"ID":10, "Name":"DRAGON", "animation":"dragon", "Bio":"I BREATHE FIRE AND I'M NOT AFRAID TO USE IT","Pic":"dragon01"}
+    , {"ID":11, "Name":"BAD BUNNY", "animation":"badbunny", "Bio":"LIKE A REGULAR BUNNY.  WITH A LITTLE LESS NICE.","Pic":"badbunny01"}
+    , {"ID":6, "Name":"FLAPPY", "animation":"flappy", "Bio":"CUTE. IT'S PRETTY MUCH WHAT I DO","Pic":"flappy01"}
+    , {"ID":5, "Name":"MAJOR RIGBY", "animation":"puppy", "Bio":"PET ME OR PREPARE TO GET LOTS OF KISSES","Pic":"doggie01"}
+    , {"ID":12, "Name":"SCRAMBLES", "animation":"cat", "Bio":"PET ME AND YOU MIGHT JUST GET A SCRATCH","Pic":"cat01"}
+    , {"ID":8, "Name":"PORKCHOP", "animation":"porkchop", "Bio":"I'M LESS OF A MUD WALLOWER AND MORE OF A BLANKET CUDDLER","Pic":"porkchop01"}
+    , {"ID":13, "Name":"DUCKY", "animation":"ducky", "Bio":"PSSUKERING PSSUKETASH","Pic":"ducky01"}
+   ]
+}

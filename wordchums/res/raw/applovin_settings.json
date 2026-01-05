@@ -1,0 +1,8 @@
+{
+	"consent_flow_settings":
+	{
+		"consent_flow_enabled": true,
+		"consent_flow_terms_of_service": "https://www.tails1154.com/terms",
+		"consent_flow_privacy_policy": "https://www.tails1154.com/privacy"
+	}
+}

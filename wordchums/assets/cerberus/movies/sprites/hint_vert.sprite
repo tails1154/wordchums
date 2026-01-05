@@ -1,0 +1,14 @@
+{
+   "screenSize": { "w": 640, "h": 960 },
+   "anims":
+   [
+      {
+         "type": "default",
+         "movie": "hint_effect",
+         "anim": "hint_vert",
+         "scale": 1.0,
+         "anchor": { "x": 87.5, "y": 557.5 },
+         "loop": false
+      }
+   ]
+}

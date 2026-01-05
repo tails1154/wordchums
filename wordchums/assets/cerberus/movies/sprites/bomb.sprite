@@ -1,0 +1,13 @@
+{
+   "screenSize": { "w": 640, "h": 960 },
+   "anims":
+   [
+      {
+         "type": "default",
+         "movie": "bomb_blast01",
+         "scale": 1.0,
+         "anchor": { "x":0, "y": 0 },
+         "loop": false
+      }
+   ]
+}
