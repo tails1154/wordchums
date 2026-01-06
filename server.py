@@ -13,12 +13,27 @@ def reload_script():
     # Replace the current process with a new one running the same script
     os.execv(sys.executable, ['python'] + [script_path])
 
+
 global users
 global q
+
 
 print("Loading DB...")
 users = tinydb.TinyDB('data/users.json')
 q = tinydb.Query()
+
+
+def get_next_user_id():
+    global users
+    global q
+    all_users = users.all()
+    if not all_users:
+        return 1000  # Start your IDs at 1000 (or wherever you want)
+
+    # Extract all 'us' values, convert to int, and find the max
+    # We use int() because the API usually sends them as strings
+    existing_ids = [int(u['us']) for u in all_users if 'us' in u]
+    return max(existing_ids) + 1
 
 
 
@@ -45,6 +60,8 @@ def uptu():
 @app.route('/app/cknm', methods=['GET'])
 def cknm():
     print("/app/cknm")
+    global users
+    global q
     # This function seems to return the userid of a user if it exists, or {e: 2, an: <username>} if it doesnt. i'm actually going to make a simple data storage really quick for this.
     # i use pickleddb what the heck this is so weird what is query()?????
     if not users.search(q.nm == request.args.get('nm', '')) and request.args.get('nm', '') != '':
@@ -60,7 +77,37 @@ def cknm():
         else:
             # here the server would return a random name for us, from a set of words and pick randomly and a 3 digit number at the end i think.
             return jsonify({"e": 2, "an": getRandomName()}) # please excuse my laziness on not checking if that username is already used.
-
+@app.route('/app/crac', methods=['POST'])
+def crac():
+    print("/app/crac")
+    global users
+    global q
+    # if a error occoured, the server sends back {"e": "3"}, if not it sends something like this: {"us": "5291348673626112", "co": 250.0, "ivv": 0, "gdpr": "False"}
+    # us, probably being the user id, or USer. co is probably a acronym for COins. ivv is....uh....i dont know. gdpr, is obvious. also, wanted to point out, False is capatalized here, wonder if peoplefun use python for their servers lol. that would be kinda funny.
+    if not users.search(q.nm == request.args.get('nm', '')) and request.args.get('nm', '') != '':
+        # user doesn't already exist, create the user in the database.
+        # Create the data object, because i really dont feel like doing it in a function lol
+        userobj = {
+            "us": str(get_next_user_id()),
+            "nm": request.args.get('nm', ''), # are you getting sick of me not putting this in a variable yet?
+            "co": 250.0, # what the server returned, taking from that
+            "ivv": 0, #idk what ivv is
+            "gdpr": False # gdpr my butt
+        }
+        users.insert(userobj) # commit the change to db
+        responseobj = {
+            "us": str(users.search(q.nm == request.args.get('nm', ''))[0]['us']), # amazing code. not hard to read or debug at all /s
+            "nm": request.args.get('nm', ''), # what are the chances of the username changing between inserting the thing into the db and now?
+            "co": str(users.search(q.nm == request.args.get('nm', ''))[0]['co']), # amazing code v2: now with str() wrapped in it! /s
+            "ivv": str(users.search(q.nm == request.args.get('nm', ''))[0]['ivv']), # what is ivv anyways? level or something? thats all i could guess.
+            "gdpr": False # every time i type "gdpr" i accidentally type "gdps" first because i ran a gdps at one point.
+        }
+        return jsonify(responseobj) # fire this sucker to the client
+    else:
+        if request.args.get('nm', '') != '':
+            return jsonify({"e": "3"})
+        else:
+            return jsonify({"e": "3"})
 @app.errorhandler(404)
 def handle_unknown(e):
     # This only runs if the request didn't match /app//stuc or /app//uptu
