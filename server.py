@@ -95,8 +95,12 @@ def crac():
             "us": str(get_next_user_id()),
             "nm": request.args.get('nm', ''), # are you getting sick of me not putting this in a variable yet?
             "co": 250.0, # what the server returned, taking from that
-            "ivv": 0, #idk what ivv is
-            "gdpr": False # gdpr my butt
+            "ivv": 10, #idk what ivv is
+            "gdpr": False, # gdpr my butt
+            "ct": "10",
+            "cid": "2005",
+            "clr": "3002",
+            "dv": str(request.args.get('dv', '')) # DeVice ID maybe?
         }
         users.insert(userobj) # commit the change to db
         responseobj = {
@@ -104,7 +108,8 @@ def crac():
             "nm": request.args.get('nm', ''), # what are the chances of the username changing between inserting the thing into the db and now?
             "co": str(users.search(q.nm == request.args.get('nm', ''))[0]['co']), # amazing code v2: now with str() wrapped in it! /s
             "ivv": str(users.search(q.nm == request.args.get('nm', ''))[0]['ivv']), # what is ivv anyways? level or something? thats all i could guess.
-            "gdpr": False # every time i type "gdpr" i accidentally type "gdps" first because i ran a gdps at one point.
+            "gdpr": False, # every time i type "gdpr" i accidentally type "gdps" first because i ran a gdps at one point.
+            "ct": str("10") # I'm assuming 'ct' is Chumbot Tickets or something.
         }
         return jsonify(responseobj) # fire this sucker to the client
     else:
@@ -112,14 +117,40 @@ def crac():
             return jsonify({"e": "3"})
         else:
             return jsonify({"e": "3"})
+@app.route('/app/stch', methods=['POST'])
+def stch():
+    # probably a acronym for SeT CHaracter
+    if users.search(q.us == request.args.get('us', '')) and users.search(q.dv == request.args.get("dv", ""))[0] == users.search(q.us == request.args.get("us", ""))[0]:
+        user = users.search(q.us == request.args.get("us", ""))[0]
+        user.update({"cid": request.args.get('cid', ''), "clr": request.args.get("clr", "")})
+        return jsonify({"e": "0"})
+    else:
+        return jsonify({"e": "1"})
+@app.route('/app/api/v1/user-data/mark-for-delete', methods=['POST'])
+def markfordelete():
+    print("/app/api/v1/user-data/mark-for-delete")
+    if users.search(q.us == request.args.get('us', '')) and users.search(q.dv == request.args.get("dv", ""))[0] == users.search(q.us == request.args.get("us", ""))[0]:
+        print("Deleted user id")
+        users.remove(q.us == request.args.get('us', ''))
+        return jsonify({"e": "0"})
+    else:
+        print("Error user not found")
+        return jsonify({"e": "1"})
 @app.route('/app/stnm', methods=['POST'])
 def stnm():
     user_id = request.args.get('us', '')
     new_name = request.args.get('nm', '')
+    if not users.search(q.us == request.args.get('us', ''))[0] == users.search(q.dv == request.args.get("dv", ""))[0]:
+        print("Invalid authentication")
+        return jsonify({"e": "4"})
 
     # 1. Check if the name is already taken by someone ELSE
     if users.search(q.nm == new_name):
-        return jsonify({"nm": q.nm})
+        print("Already taken by someone else")
+        return jsonify({"e": "1"})
+    if not users.search(q.nm == user_id): #does the user even EXIST in the first place???
+        print(str(user_id) + " Does not exist")
+        return jsonify({"e": "3"})
 
     # 2. Update the record in the DB
     # This finds the user by 'us' and sets their 'nm' to the new value
