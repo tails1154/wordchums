@@ -46,12 +46,16 @@ def stuc():
     return jsonify({"e": "2", "m": "No user ID"})
 @app.route('/app/upda', methods=['GET', 'POST'])
 def upda():
-    print("/app//upda: Not Implemented")
+    print("/app/upda")
     # NOTE: checking the offical server sends obfuscated json (obfuscated as in i cant read it because the tags are like one letter long), but it seems to trigger this request every time like a button is pressed, so maybe it's like analytics, but the server sends back bunch of data, and some words are in there, so maybe its also like game config? idk the client doesn't seem to really care though. but looking again, the request doesnt change, even when another button is pressed. strange. maybe it's just trying again to get the data? its probably just game config, hence the name /app/upda, but i would assume it would use like /app/config or something. strange. if the client crashes when we get to the home screen. this will be the first place to look. oh wait analytics are /app//uptu i was reading it wrong so this is probably game config. but why a post request? okay, client seems to say "no internet connection" after trying this request. i probably need to send this. this is defenetally game config and it's assuming you don't have internet, since it can't parse it i think. I'm storing the response to this request in a file because its big and idk might need to change it soooo yeah
     # I'l have to reverse engineer and find out what the heck all those values are for.
+
+
+    # Sending this to the client seems to crash it, it doesnt seem to care if it doesnt have it though. EDIT: when you register, uh then the client cares soooo
     with open("config/upda.json", "rt") as f:
         return f.read(), 200
     # this is like the only time open is used in python lmao
+    #return jsonify({"e": "2", "m": "No user ID"}), 200
 
 @app.route('/app/uptu', methods=['GET'])
 def uptu():
@@ -102,7 +106,6 @@ def crac():
             "ivv": str(users.search(q.nm == request.args.get('nm', ''))[0]['ivv']), # what is ivv anyways? level or something? thats all i could guess.
             "gdpr": False # every time i type "gdpr" i accidentally type "gdps" first because i ran a gdps at one point.
         }
-        print("Sending back to client: " + jsonify(responseobj))
         return jsonify(responseobj) # fire this sucker to the client
     else:
         if request.args.get('nm', '') != '':
