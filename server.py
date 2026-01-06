@@ -2,8 +2,25 @@ from flask import Flask, request, jsonify
 import json
 import os
 import tinydb
+import random
+adjectives = ["Happy", "Cool", "Super"]
+nouns = ["Dragon", "Dog", "Bunny", "Penguin", "Angel"]
+def getRandomName():
+    return f"{random.choice(adjectives)}{random.choice(nouns)}{random.randint(100, 999)}"
+def reload_script():
+    # Get the absolute path of the current script
+    script_path = os.path.abspath(__file__)
+    # Replace the current process with a new one running the same script
+    os.execv(sys.executable, ['python'] + [script_path])
+
+global users
+global q
+
+print("Loading DB...")
 users = tinydb.TinyDB('data/users.json')
 q = tinydb.Query()
+
+
 
 app = Flask(__name__)
 
@@ -25,10 +42,24 @@ def upda():
 def uptu():
     print("/app//uptu. i assume a misspelled shortened version of update?")
     return jsonify({"e": "0", "m": "Not Implemented in server"})
-@app.route('/app/cknm', methods['GET'])
+@app.route('/app/cknm', methods=['GET'])
 def cknm():
+    print("/app/cknm")
     # This function seems to return the userid of a user if it exists, or {e: 2, an: <username>} if it doesnt. i'm actually going to make a simple data storage really quick for this.
     # i use pickleddb what the heck this is so weird what is query()?????
+    if not users.search(q.nm == request.args.get('nm', '')) and request.args.get('nm', '') != '':
+        return jsonify({"e": "2", "an": request.args.get('nm', '')}) # user doesn't exist
+    else:
+        if request.args.get('nm', '') != '':
+            user = users.search(q.nm == request.args.get('nm', ''))
+            if not user:
+                return jsonify({"e": "2", "an": request.args.get('nm', '')}) # idk how we could ever reach here, but just to be sure
+            else:
+                userobj = user[0]
+                return jsonify({"us": userobj['us']}) # thats literally all it sends. bruh.
+        else:
+            # here the server would return a random name for us, from a set of words and pick randomly and a 3 digit number at the end i think.
+            return jsonify({"e": 2, "an": getRandomName()}) # please excuse my laziness on not checking if that username is already used.
 
 @app.errorhandler(404)
 def handle_unknown(e):
