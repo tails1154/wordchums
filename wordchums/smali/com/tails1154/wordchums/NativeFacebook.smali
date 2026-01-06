@@ -99,7 +99,26 @@
     .locals 0
     return-void
 .end method
+.method public static m_Cached()Z
+    .registers 1
 
+    const/4 v0, 0x0
+
+    return v0
+.end method
+.method public static Cached()Z
+    .registers 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+.method public static Updating()Z
+    .registers 1
+
+    const/4 v0, 0x0
+    return v0
+.end method
 .method public static OnResume()V
     .locals 0
     return-void
