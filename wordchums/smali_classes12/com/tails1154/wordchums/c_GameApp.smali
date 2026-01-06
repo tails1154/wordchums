@@ -7076,7 +7076,7 @@
     .line 10
     .line 11
     :cond_0
-    const-string v0, "http://tailsbook.lan:6767/app/"
+    const-string v0, "http://tailsbook.lan:6767/app"
 
     .line 12
     return-object v0

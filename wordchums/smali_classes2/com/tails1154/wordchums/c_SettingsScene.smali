@@ -6692,7 +6692,7 @@
 
     invoke-virtual {v0, p3}, Lcom/tails1154/wordchums/c_LabelNode;->p_Text2(Ljava/lang/String;)I
 
-    const-string p3, "http://tailsbook.lan:6767/app/"
+    const-string p3, "http://tailsbook.lan:6767/app"
 
     :goto_0
     invoke-virtual {p2, p3}, Lcom/tails1154/wordchums/c_LabelNode;->p_Text2(Ljava/lang/String;)I

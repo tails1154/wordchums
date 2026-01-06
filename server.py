@@ -102,6 +102,7 @@ def crac():
             "ivv": str(users.search(q.nm == request.args.get('nm', ''))[0]['ivv']), # what is ivv anyways? level or something? thats all i could guess.
             "gdpr": False # every time i type "gdpr" i accidentally type "gdps" first because i ran a gdps at one point.
         }
+        print("Sending back to client: " + jsonify(responseobj))
         return jsonify(responseobj) # fire this sucker to the client
     else:
         if request.args.get('nm', '') != '':
