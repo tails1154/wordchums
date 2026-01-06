@@ -3,3 +3,4 @@ renamed.apk
 renamed/
 wordchums/build
 wordchums/dist
+data/*.json

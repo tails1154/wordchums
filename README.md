@@ -20,6 +20,9 @@ then, run `grep -r -a "http://tailsbook.lan:6767" .`. it should give you a list 
 
 ## Running the (incomplete) server
 
-you need `flask` and `python3` installed.
+you need the python modules:
+	`flask` and `tinydb`
+
+and obviously `python3`
 
 once you got those, just run `python3 server.py`
