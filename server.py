@@ -112,6 +112,21 @@ def crac():
             return jsonify({"e": "3"})
         else:
             return jsonify({"e": "3"})
+@app.route('/app/stnm', methods=['POST'])
+def stnm():
+    user_id = request.args.get('us', '')
+    new_name = request.args.get('nm', '')
+
+    # 1. Check if the name is already taken by someone ELSE
+    if users.search(q.nm == new_name):
+        return jsonify({"nm": q.nm})
+
+    # 2. Update the record in the DB
+    # This finds the user by 'us' and sets their 'nm' to the new value
+    users.update({'nm': new_name}, q.us == user_id)
+
+    print(f"Updated User {user_id} to name: {new_name}")
+    return jsonify({"nm": request.args.get('nm', '')}) # Success
 @app.errorhandler(404)
 def handle_unknown(e):
     # This only runs if the request didn't match /app//stuc or /app//uptu
